@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Open+Sans:wght@700&family=PT+Serif:ital@1&family=Special+Elite&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <title>SOTER - Contacto</title>
+    </head>
+    <body class="cuerpo  grid__container">
+        <header class="header">
+            
+            <div class="header__contenedor">
+                
+                <nav class="barra">
+                    <!-- Barra Navegacion del Menu-->
+
+                    <input type="checkbox" name="" id="menu_check">
+                    <label for="menu_check" class="nav__checkmenu">
+                        <img src="img/btn-menu.png.png" alt="Boton Menu">
+                    </label>
+        
+                    <a href="index.html" class="header__logo">
+                        <img src="img/logo.png" alt="Logo" class="header__logo1">
+                    </a>
+
+                    <img src="img/logosoter.png" alt="Soter" class="header__soter">
+                    <ul class="header__navmenu ">
+                        <li class="header__menu " id="menu1">
+                            <a href="index.html" class="header__menu">Inicio</a>
+                        </li>
+                        <li class="header__menu" id="menu2">
+                            <a href="acerca.html" class="header__menu">Acerca De</a>
+                        </li>
+                        <li class="header__menu" id="menu3">
+                            <a href="equipo.html" class="header__menu">Nuestro Equipo</a>
+                        </li>
+                        <li class="header__menu " id="menu4">
+                            <a href="servicios.html" class="header__menu">Servicios</a>
+                            <ul class="header__submenu" id="submenu__lista">
+
+                                <li class="header__submenu__lista">
+                                   <a href="servicios.html#CustEsp" class="header__submenu__link">Custodias Especiales</a>
+                                </li>
+                                <li class="header__submenu__lista">
+                                    <a href="servicios.html#Investigaciones" class="header__submenu__link">Investigaciones</a>
+                                </li>
+                                <li class="header__submenu__lista">
+                                    <a href="servicios.html#SolTec" class="header__submenu__link">Soluciones Tecnologicas</a>
+                                </li>
+                                <li class="header__submenu__lista">
+                                    <a href="servicios.html#Capacitaciones" class="header__submenu__link">Capacitaciones</a>
+                                </li>
+                                <li class="header__submenu__lista">
+                                    <a href="servicios.html#AyA" class="header__submenu__link">Asesoramiento</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="header__menu" id="menu5">
+                            <a href="contacto.html" class="header-menu">Contactanos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+        <br>
+        <br>
+
+        <!--   PRINCIPAL  -->
+
+        <img src="img/cartero.jpg" alt="Contacto" class="main__imagenestop" width="100%" height="300rem">
+
+        <main class="main main__contacto">
+
+            
+            <h1>Contacto</h1>
+            <br>
+            <h4>Contáctanos por cualquiera de nuestras vias disponibles y cuéntanos que tienes en mente, estaremos encantados de poder ofrecerte toda la información que necesites de la forma mas clara posible. Recuerda que también puedes contactarnos mediante el formulario de contacto que tienes debajo</h4>
+            <section class="main__seccion__formulario" id="Contacto">
+                <form action="" class="main__formulario">
+    
+                        <select name="Motivo de su contacto">
+                            <option value="Consulta">Quiero Solicitar Informacion</option>
+                            <option value="Comercial">Quiero Asesoramiento Comercial</option>
+                            <option value="Incorporacion">Quiero Unirme a Soter</option>
+                        </select>
+                        <div>
+                            <input type="text" name="nombreyapellido" id="nombreapellido" placeholder="Indique su Nombre y Apellido *" required>
+                        </div>
+                        <div>
+                            <input type="tel" name="numero" id="tel" placeholder="Ingrese su número de contacto" maxlength="20">
+                        </div>
+                        <div>
+                            <input type="email" name="Mail" id="correo" placeholder="Ingrese su correo electronico: ej@correo.com *" required>
+                        </div>              
+                        <div>
+                            <textarea name="Comentario" id="comentario" cols="30" rows="5" placeholder="Escriba aqui su consulta *" required></textarea>
+                        </div>
+                        *Campo Obligatorio
+                        <div>
+                        <input type="checkbox" name="acepta" value="1" required /> Acepta términos y condiciones
+                        </div>
+                        <div class="formulario__botones">
+                            <input type="button" value="Enviar Formulario" id="enviar">
+                            <input type="reset" value="Reestablecer Formulario" id="reset">
+                        </div>
+                   
+                </form>
+            </section>
+
+            <h2>Donde estamos</h2>
+
+            <br>
+
+            <section class="seccion__locacion" id="Locacion">
+                
+                <div class="main__seccion__mapa--desktop">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.9735081749108!2d-58.37139517078851!3d-34.60684099877867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352cd8432723%3A0xe61b2ee06d5d9987!2sCustoms%20%26%20Commerce!5e0!3m2!1ses-419!2sar!4v1643979939486!5m2!1ses-419!2sar"  height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+                </div>
+                <p>Ubicados en pleno microcentro de la Capital Federal, a metros de los edificios federales más representativos, logramos coordinar con las distintas bases operativas en las principales ciudades del pais para estar siempre cerca de donde necesitas que estemos. Atención las 24 horas, encontrá los 365 días del año respuesta a tus inquietudes y un feedback ágil para resolver cualquier problema que surja. </p>
+                
+            </section>
+        </main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!--PIE DE PAGINA-->
+
+        <footer class="footer">
+            <div class="footer__contenedor">
+                <div class="footer__columna1 subgrid__politicas">
+                    <p>Aviso Legal</p>
+                    <p>Politica de privacidad</p>
+                    <p>Politica de Cookies</p>          
+                </div>
+                <div class="footer__columna2">
+                    <div class="footer__columna2__redes">
+                        <table class="columna2__redes__tabla"> 
+                            <tbody>
+                                <tr class="subgrid__redes">
+                                    <td>
+                                        <a href="#" class="tabla__facebook" target="_blank">
+                                            <img src="img/facebook.png" alt="logo fb" width="90px"> 
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="tabla__instagram" target="_blank">
+                                            <img src="img/instagram-logo.png" alt="logo instagram" width="70px">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="tabla__linkedin" target="_blank">
+                                            <img src="img/linkedin-logo.png" alt="logo linkedin" width="80px">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="tabla__twitter" target="_blank">
+                                            <img src="img/twitter.png" alt="logo twitter" width="80px">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+                <div class="footer__columna3">
+                    <div class="columna3__contacto subgrid__contactos">
+                        <div class="columna3__contacto__whatsapp">
+                            <img src="img/whatsapp.png" alt="logo whatsapp" width="50px"> 
+                            <p>+54 9 11 2024 3549</p>
+                        </div>
+                        <div class="columna3__contacto__telefono">
+                            <img src="img/telefono-logo.png" alt="logo telefono" width="50px">
+                            <p>+54 9 11 2024 3550</p>
+                        </div>
+                        <div class="columna3__contacto__mail">
+                            <a href="mailto:contacto@soter.com.ar">
+                                <img src="img/email.png" alt="logo email" width="50px">
+                            </a>
+                            <p>contacto@soter.com.ar</p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="subgrid__derechos">
+                <p> Todos los derechos reservados @ Soter</p>
+             </div>
+        </footer>
+    </body>
+</html>
