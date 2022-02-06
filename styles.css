@@ -102,6 +102,26 @@
     display: none;
 }
 
+     /*Animacion Menu */
+
+     .menu__animate--delay1 {
+        animation-delay: 0.3s;
+    }
+    
+    .menu__animate--delay2 {
+        animation-delay: 0.6s;
+    }
+    
+    .menu__animate--delay3 {
+        animation-delay: 0.9s;
+    }
+    
+    .menu__animate--delay4 {
+        animation-delay: 1.2s;
+    }
+    
+       /*   ---------    */ 
+
 .header__submenu {
     position: absolute;
     display: none;
