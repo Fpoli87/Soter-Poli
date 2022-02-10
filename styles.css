@@ -5,6 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    /*overflow-x: hidden;*/
 }
        /* Grid Layout */
 .cuerpo {
@@ -146,7 +147,7 @@
     overflow: hidden;
 } 
 
-@media (max-width: 1052px) {
+@media (max-width: 1074px) {
     .header__logo {
         padding: 15px;
     }
@@ -157,7 +158,7 @@
 
 }
 
-@media (max-width: 1012px) {
+@media (max-width: 1033px) {
     .header__logo {
         padding: 15px;
     }
@@ -237,9 +238,6 @@
 }
 
 
-
-
-
       /*     BODY     */
 
 body{
@@ -284,6 +282,7 @@ h4 {
     font-size: 1.8rem;
     margin: 1rem;
 }
+
 
        /* Inicio  */
 
@@ -333,6 +332,11 @@ h4 {
 
 
 @media screen and (max-width: 922px) {
+    
+    .seccion__inicio {
+        font-size: 1.7rem;
+    }
+    
     .seccion__tarjetas {
         display: flex;
         flex-wrap: wrap;
@@ -342,8 +346,12 @@ h4 {
         margin: 0.8rem;
     }
 
+    .seccion__tarjetas__texto--fuente {
+        font-size: 1.2rem;
+    }
     .seccion__tarjetaizq {
         width: auto;
+        
     }
     
     .seccion__tarjetacentral {
@@ -354,6 +362,7 @@ h4 {
         width: auto;
     }
 }
+
 
          /* Acerca DE  */
 
@@ -389,13 +398,14 @@ h4 {
 }
 
 .main__valores__titulo {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 .valores__titulos {
-    font-size: 1.1rem;
-
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
 }
 
 #Mision {
@@ -415,10 +425,13 @@ h4 {
 .main__valores__lista li{
     list-style-image: url(img/staricon2.png);
     line-height: 1.6rem;
-
+    list-style-position: inside;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    font-size: 1.3rem;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1200px) {
 
     .main__secciones__historia {
         display: flex;
@@ -426,6 +439,10 @@ h4 {
         font-size: 1.5rem;
         margin-left: 1rem;
         margin-right: 1rem;
+    }
+
+    .main__secciones__historia1 img {
+        width: 100%;
     }
 
     .main__secciones__valores {
@@ -451,6 +468,9 @@ h4 {
         margin-left: 1.3rem;
     }
 
+    #Mision {
+        font-size: 1.7rem;
+    }
 
 }
 
@@ -473,9 +493,10 @@ h4 {
 }
 
 .secciones__equipo1 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 1.5rem 2rem;
     text-align: justify;
+    font-family: 'Open Sans', sans-serif;
     
 }
 .secciones__equipo2 {
@@ -502,6 +523,14 @@ h4 {
     margin-left: 0;
     margin-right: 0;
 }
+
+@media screen and (max-width: 980px) {
+
+    .secciones__equipo1 {
+        font-size: 1.5rem;
+    }
+}
+
 
         /* SERVICIOS  */
 
@@ -567,6 +596,14 @@ h4 {
         font-size: 1.5rem;
         margin-left: 1rem;
         margin-right: 1rem;
+    }
+
+    .main__seccion__custodias1 img,
+    .main__seccion__investigacion1 img,
+    .main__seccion__soluciones1 img,
+    .main__seccion__capacitaciones1 img,
+    .main__seccion__auditoria1 img {
+        width: 100%;
     }
 
     #imgservicios {
@@ -728,6 +765,7 @@ footer {
     flex-direction: column;
     justify-items: center;
     justify-content: center;
+    font-size: 1.2rem;
     
 }
 
@@ -742,12 +780,14 @@ footer {
     margin-top: 5px;
     margin-bottom: 1rem;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 .footer__columna3 {
     margin-top: 0px;
     margin-right: 0;    
     text-align: justify;
+    font-size: 1.2rem;
 }
 
 .columna3__contacto__whatsapp {
@@ -785,6 +825,7 @@ footer {
 
     .subgrid__derechos {
         grid-area: derechos;
+        font-size: 1.3rem;
     }
 
     .subgrid__contactos {

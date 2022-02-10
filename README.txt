@@ -15,7 +15,6 @@ Gracias!
 Se incluye el proyecto al Github
 Se realiza un cambio de colores
 
-
 -------------   Version 0.5   -------------------
 
 Se cambia el orden en el contenido de Acerca.html
@@ -26,3 +25,9 @@ Se ajustan medidas de pantalla en @media queries.
 
 Se agrega Animacion en NavBar.
 Se agrega en archivo estilos.css la modificacion de Animacion
+
+-------------   Version 0.7   -------------------
+
+Se optimizan tamaños de fuentes para version MOBILE
+Se corrige tamaño Navbar para diferentes medidas de pantalla
+Optimizacion de imagenes en version MOBILE
