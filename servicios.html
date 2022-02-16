@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="styles.css">
         <link rel="shortcut icon" href="favicon.png">
         <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Open+Sans:wght@700&family=PT+Serif:ital@1&family=Special+Elite&display=swap" rel="stylesheet">
@@ -30,38 +32,38 @@
                      <img src="img/logosoter.png" alt="Soter" class="header__soter">
                      <ul class="header__navmenu animate__animated animate__fadeInRight">
                          <li class="header__menu animate__animated animate__fadeInRight" id="menu1">
-                             <a href="index.html" class="header__menu">Inicio</a>
+                             <a href="index.html" class="header__menu text-decoration-none">Inicio</a>
                          </li>
                          <li class="header__menu animate__animated animate__fadeInRight menu__animate--delay1" id="menu2">
-                             <a href="acerca.html" class="header__menu">Acerca De</a>
+                             <a href="acerca.html" class="header__menu text-decoration-none">Acerca De</a>
                          </li>
                          <li class="header__menu animate__animated animate__fadeInRight menu__animate--delay2" id="menu3">
-                             <a href="equipo.html" class="header__menu">Nuestro Equipo</a>
+                             <a href="equipo.html" class="header__menu text-decoration-none">Nuestro Equipo</a>
                          </li>
                          <li class="header__menu animate__animated animate__fadeInRight menu__animate--delay3" id="menu4">
-                             <a href="servicios.html" class="header__menu">Servicios</a>
+                             <a href="servicios.html" class="header__menu text-decoration-none">Servicios</a>
                              <ul class="header__submenu" id="submenu__lista">
  
                                  <li class="header__submenu__lista">
-                                    <a href="servicios.html#CustEsp" class="header__submenu__link">Custodias Especiales</a>
+                                    <a href="servicios.html#CustEsp" class="header__submenu__link text-decoration-none">Custodias Especiales</a>
                                  </li>
                                  <li class="header__submenu__lista">
-                                     <a href="servicios.html#Investigaciones" class="header__submenu__link">Investigaciones</a>
+                                     <a href="servicios.html#Investigaciones" class="header__submenu__link text-decoration-none">Investigaciones</a>
                                  </li>
                                  <li class="header__submenu__lista">
-                                     <a href="servicios.html#SolTec" class="header__submenu__link">Soluciones Tecnologicas</a>
+                                     <a href="servicios.html#SolTec" class="header__submenu__link text-decoration-none">Soluciones Tecnologicas</a>
                                  </li>
                                  <li class="header__submenu__lista">
-                                     <a href="servicios.html#Capacitaciones" class="header__submenu__link">Capacitaciones</a>
+                                     <a href="servicios.html#Capacitaciones" class="header__submenu__link text-decoration-none">Capacitaciones</a>
                                  </li>
                                  <li class="header__submenu__lista">
-                                     <a href="servicios.html#AyA" class="header__submenu__link">Asesoramiento</a>
+                                     <a href="servicios.html#AyA" class="header__submenu__link text-decoration-none">Asesoramiento</a>
                                  </li>
                                  
                              </ul>
                          </li>
                          <li class="header__menu animate__animated animate__fadeInRight menu__animate--delay4" id="menu5">
-                             <a href="contacto.html" class="header-menu">Contactanos</a>
+                             <a href="contacto.html" class="header-menu text-decoration-none">Contactanos</a>
                          </li>
                      </ul>
                  </nav>
@@ -189,8 +191,26 @@
                 </div>
             </section>
             <br>
-            <img src="img/fullservice.jpg" alt="servicios" width="100%" id="imgservicios">
+            <img src="img/fullservice.jpg" class="d-none d-lg-block" alt="servicios" width="100%" id="imgservicios">
 
+            <section class="w-100 ml-0 mr-0 mt-5 d-block d-sm-block d-md-block d-lg-none main__servicios--mobile" id="main__servicios--mobile">
+
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active carousel__servicios">
+                        <img src="./img/servicio-carrousel1-A.jpg" class="d-block w-100" alt="banderas">
+                    </div>
+                    <div class="carousel-item carousel__servicios">
+                        <img src="./img/servicio-carrousel1-B.jpg" class="d-block w-100" alt="Banderas">
+                    </div>
+                    <div class="carousel-item carousel__servicios">
+                        <img src="./img/servicio-carrousel1-C.jpg" class="d-block w-100" alt="Banderas">
+                    </div>
+                    </div>
+                </div>
+        
+                </div>
+            </section>
             
         </main>
 
@@ -268,5 +288,7 @@
              </div>
         </footer>
         
+        <script src="js/bootstrap.bundle.min.js"></script>
+
     </body>
 </html>

@@ -31,3 +31,9 @@ Se agrega en archivo estilos.css la modificacion de Animacion
 Se optimizan tamaños de fuentes para version MOBILE
 Se corrige tamaño Navbar para diferentes medidas de pantalla
 Optimizacion de imagenes en version MOBILE
+
+-------------   Version 0.8   -------------------
+
+Incorporacion de SASS y archivos .json
+Reestructuracion del CSS en base a SASS
+Mejora de imagenes en version Tablet y Mobile
