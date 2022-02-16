@@ -32,8 +32,11 @@ Se optimizan tamaños de fuentes para version MOBILE
 Se corrige tamaño Navbar para diferentes medidas de pantalla
 Optimizacion de imagenes en version MOBILE
 
--------------   Version 0.8   -------------------
+-------------   Version 0.9   -------------------
 
 Incorporacion de SASS y archivos .json
 Reestructuracion del CSS en base a SASS
 Mejora de imagenes en version Tablet y Mobile
+
+-------------   Version 0.10   -------------------
+Mejora visualizacion y ajustes en Mobile

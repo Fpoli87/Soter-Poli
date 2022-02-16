@@ -3,9 +3,9 @@
     padding: 0px;
     font-family: 'PT Serif', serif;
     box-sizing: border-box;
-    text-decoration: none;
+    /*text-decoration: none;
     list-style: none;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;*/
 }
        /* Grid Layout */
 .cuerpo {
@@ -35,6 +35,8 @@
 
 .main {
     grid-area: main;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 .footer__contenedor {
@@ -137,6 +139,7 @@
     position: absolute;
     display: none;
     text-align: center;
+    align-items: center;
     margin: 0 0;
         li {
             a{
@@ -158,7 +161,7 @@
     overflow: hidden;
 } 
 
-@media (max-width: 1074px) {
+@media (max-width: 1084px) {
     .header__logo {
         padding: 15px;
     }
@@ -169,7 +172,7 @@
 
 }
 
-@media (max-width: 1033px) {
+@media (max-width: 1044px) {
     .header__logo {
         padding: 15px;
     }
@@ -184,7 +187,7 @@
 
 }
 
-@media (max-width: 937px) {
+@media (max-width: 952px) {
     .nav__checkmenu {
         display: block;
         margin-top: 0.625rem;
@@ -312,10 +315,13 @@ h4 {
     width: 100%;
     font-size: 1.5rem;
     text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
 
     p {
-        margin-block-end: 0px;
-        margin-block-start: 0px;
+        margin-block-end: 5px;
+        margin-block-start: 5px;
+        padding: 0px 10px;
     }
 }
 
@@ -359,6 +365,10 @@ h4 {
     
     .seccion__inicio {
         font-size: 1.7rem;
+        p {
+            padding-left: 3px;
+            padding-right: 3px;
+        }
     }
     
     .seccion__tarjetas {
@@ -399,7 +409,7 @@ h4 {
 
 
 .Secciones__acerca {
- margin-left: 0;
+    margin-left: 0;
 }
 
 .seccion__acerca__mision, 
