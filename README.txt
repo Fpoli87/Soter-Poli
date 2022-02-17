@@ -40,3 +40,8 @@ Mejora de imagenes en version Tablet y Mobile
 
 -------------   Version 0.10   -------------------
 Mejora visualizacion y ajustes en Mobile
+
+-------------   Version 0.11   -------------------
+
+Incorporacion Iconos FontAwesome
+Aplicacion de Interlineados 

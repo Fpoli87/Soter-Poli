@@ -459,11 +459,11 @@ h4 {
 .main__valores__lista {
 
     li{
-        list-style-image: url(img/staricon2.png);
+        list-style-image: url(../img/staricon2.png);
         line-height: 1.6rem;
         list-style-position: inside;
-        margin-left: 2rem;
-        padding-left: 2rem;
+        margin-left: 0;
+        padding-left: 0;
         font-size: 1.3rem;
     }
 }
@@ -504,7 +504,10 @@ h4 {
     .main__valores__lista {
         display: flex;
         flex-direction: column;
-        margin-left: 1.3rem;
+        margin-left: 0;
+        margin-right: 10px;
+        padding-left: 0;
+        padding-right: 10px;
     }
 
     #Mision {
@@ -662,7 +665,7 @@ h4 {
 /* CONTACTO */
 
 .main__seccion__formulario {
-    background-image: url(img/contacto.jpg);
+    background-image: url(../img/contacto.jpg);
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
 }
@@ -857,6 +860,15 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.redes__sociales--size {
+    font-size: 100px;
+    color: black;
+
+    &:hover {
+        color: cornflowerblue;
+    }
 }
 
        /*  FOOTER MOBILE */
