@@ -7,10 +7,10 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/fontawesome-all.min.css">
-        <link rel="stylesheet" href="styles.css">
         <link rel="shortcut icon" href="favicon.png">
         <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Open+Sans:wght@700&family=PT+Serif:ital@1&family=Special+Elite&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="styles.css">
         <title>SOTER - Servicios</title>
     </head>
     <body class="cuerpo cuerpo__servicios grid__container">
@@ -33,16 +33,16 @@
                      <img src="img/logosoter.png" alt="Soter" class="header__soter">
                      <ul class="header__navmenu animate__animated animate__fadeInRight">
                          <li class="header__menu animate__animated animate__fadeInRight" id="menu1">
-                             <a href="index.html" class="header__menu text-decoration-none">Inicio</a>
+                             <a href="index.html" class="header__menu__lista text-decoration-none">Inicio</a>
                          </li>
                          <li class="header__menu animate__animated animate__fadeInRight menu__animate--delay1" id="menu2">
-                             <a href="acerca.html" class="header__menu text-decoration-none">Acerca De</a>
+                             <a href="acerca.html" class="header__menu__lista text-decoration-none">Acerca De</a>
                          </li>
                          <li class="header__menu animate__animated animate__fadeInRight menu__animate--delay2" id="menu3">
-                             <a href="equipo.html" class="header__menu text-decoration-none">Nuestro Equipo</a>
+                             <a href="equipo.html" class="header__menu__lista text-decoration-none">Nuestro Equipo</a>
                          </li>
                          <li class="header__menu animate__animated animate__fadeInRight menu__animate--delay3" id="menu4">
-                             <a href="servicios.html" class="header__menu text-decoration-none">Servicios</a>
+                             <a href="servicios.html" class="header__menu__lista text-decoration-none">Servicios</a>
                              <ul class="header__submenu" id="submenu__lista">
  
                                  <li class="header__submenu__lista">
@@ -64,7 +64,7 @@
                              </ul>
                          </li>
                          <li class="header__menu animate__animated animate__fadeInRight menu__animate--delay4" id="menu5">
-                             <a href="contacto.html" class="header-menu text-decoration-none">Contactanos</a>
+                             <a href="contacto.html" class="header__menu__lista text-decoration-none">Contactanos</a>
                          </li>
                      </ul>
                  </nav>
@@ -75,46 +75,63 @@
         <br>
 
         <img src="img/servicios3.jpg" alt="Capsula Movil" class="main__imagenestop" width="100%" height="300rem">
-        <main class="main main__servicios">
+        
+        <br>
+        
+        <main class="main main__servicios ">
                     <!-- Lista de Servicios-->
 
             <h1>Nuestros Servicios</h1>
-
-            <br>
             
-            <section class="main__seccion__custodias" id="Servicios">
+            <section class="container main__seccion__custodias" id="Servicios">
                 <h3 class="desplegable" id="CustEsp">Custodias Especiales</h3>
-                <div class="main__servicios__custodias">
-                    <div class="main__seccion__custodias1">
-                        <img src="img/cust2.jpg" alt="Custodias" >
-                    </div>
-                    <div>
-                         lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam ipsa, voluptatum eveniet illum inventore dolore? Adipisci natus alias architecto enim similique aperiam quae dignissimos sequi beatae. Non libero odio sapiente. 
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos aut asperiores tenetur explicabo totam expedita. Reprehenderit eligendi eaque illum iusto, nam veniam dolorum a, recusandae accusantium inventore necessitatibus optio sunt?
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ipsam reiciendis! Vitae distinctio officia quos aut, itaque a sequi dicta modi, earum quam porro. Asperiores non harum libero vitae ipsa.
-                         Voluptates dolores veritatis similique ullam sunt? Architecto ab mollitia temporibus quam saepe eligendi ad delectus provident quae reiciendis quisquam labore, molestiae unde odit, explicabo sit, ex magnam est ullam quia.
-                    </div>
+                <div class="clearfix main__servicios__custodias" id="serivcioitems">
+                    
+                        <div class="main__seccion__custodias1">
+                            <img src="img/cust2.jpg" alt="Custodias" >
+                        </div>
+                    
+                    
+                        <div class="servicios__detalle ml-3 mr-3 fs-4" >
+                            <li class="lh-lg mb-3"><span class="fa-li"></span><i class="fa-solid fa-shield fa-xl ml-3 mt-2"></i></span> Servicio de cutodia personal, para usted, su familia o sus bienes. Le ofrecemos un servicio completamente adaptable a sus necesidades, junto con un plan de accion y protocolos para que siempre sepa como haremos nuestro trabajo. No hay lugar para improvisaciones. Cuente con la experiencia de décadas en el rubro protegiendo a las personas más expuestas. </li>
+                            
+                            <li class="lh-lg mb-3"><span class="fa-li"></span><i class="fa-solid fa-paw fa-xl ml-3 mt-2"></i></span> Contamos con un servicio de canes K9 entrenados para asistir a los equipos de custodia. Altamamente sociabilizados y con gran temperamento para que nunca sea riesgoso el contacto con su familia. </li>
+                            
+                            <li class="lh-lg mb-3"><span class="fa-li"></span><i class="fa-solid fa-car fa-xl ml-3 mt-2"></i></span> Nos encargaremos de su traslado, analizando constantemente todas las posibles amenazas para tomar las mejores decisiones en cada momento.</li>
+                            
+                            <li class="lh-lg mb-3"><span class="fa-li"></span><i class="fa-solid fa-plane-departure fa-xl ml-3 mt-2"></i></span> Viajaremos con usted y extenderemos la seguridad a cualquier lugar donde decida ir. Contamos con personal que habla diversos idiomas para que la comunicacion y la coordinacion con los elementos locales nunca sea una barrera.</li>
+                            
+                            <li class="lh-lg mb-3"><span class="fa-li"></span><i class="fa-solid fa-earth-americas fa-xl ml-3 mt-2"></i></span> Gracias a la experiencia adquirida en largas carreras contamos con activos y contactos en la mayoria de los paises, facilitando la operaciones logisticas y que la distancia no se un inconveniente.</li>
+                            
+                            <li class="lh-lg mb-3"><span class="fa-li"></span><i class="fa-solid fa-chess-rook fa-xl ml-3 mt-2"></i></span> Proveemos custodias fijas en su casa para tener la tranquilidad que su fuerte siempre estará seguro.</li>
+                            
+                        </div>
+                    
                 </div>
             </section>
             <br>
             <br>
             <br>
-            <section class="main__seccion__investigacion">
+            <section class="container main__seccion__investigacion">
                 <h3 class="desplegable" id="Investigaciones">Investigaciones</h3>
-                <div class="main__servicios__investigaciones">
+                <div class="clearfix main__servicios__investigaciones">
                     <div class="main__seccion__investigacion1">
                         <img src="img/seguimiento2.jpg" alt="seguimientos" >
                     </div>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, accusantium amet ipsum velit reiciendis libero et fugiat aperiam, accusamus porro nisi quas incidunt, commodi vel nulla quod sunt necessitatibus ad.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus incidunt sapiente quia eum adipisci modi expedita laborum itaque pariatur quibusdam dolor ducimus accusamus explicabo iure, eius molestias amet nemo!
-                        Fugit minus dolores magni sunt ut ea quam? Reprehenderit porro praesentium quam doloremque enim ut rerum, repellat quis eos, tenetur, incidunt necessitatibus? Veniam, adipisci. Et suscipit voluptatum ullam vel quas!
-                        Tenetur, quibusdam non ducimus pariatur totam sequi ut minima! Assumenda eveniet temporibus aut neque eos nam explicabo, ut natus cumque et quis, ipsam ex a, fugiat praesentium officia nihil nostrum?
-                        Maxime, nulla repellendus voluptatum, ducimus quia debitis molestias laborum soluta dicta, aspernatur qui blanditiis. Nemo commodi officiis alias quis. Repellendus, aperiam magnam amet dolorum sequi excepturi nam laboriosam perferendis corrupti!
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus laborum sint similique culpa ratione repellendus laudantium ut fuga ducimus inventore blanditiis dolorum corrupti perspiciatis, illum omnis tempora mollitia nostrum minus!
-                        Reprehenderit deleniti distinctio assumenda necessitatibus reiciendis hic quia. Quo consequatur dicta expedita nisi, iure cumque? Totam blanditiis vel vitae quis sint expedita voluptas temporibus veniam soluta, magnam aspernatur eligendi mollitia?
-                        Non unde harum dignissimos temporibus obcaecati quod aspernatur architecto incidunt sunt vel nesciunt adipisci, voluptas blanditiis sequi molestiae ipsam ut saepe hic earum praesentium sint fugiat? Culpa maxime illum voluptatum.
-                        Repudiandae ut iste labore quam quaerat perferendis nobis veniam voluptates, ipsum, optio consequatur ad amet quis expedita consectetur aperiam distinctio. Placeat tempore illo corporis ipsam, hic praesentium culpa fuga quibusdam.
+                    <div class="servicios__detalle fs-4">
+
+                        <ul class="fa-ul">
+                            <li class="lh-lg mb-3"><span class="fa-li"><i class="fa-solid fa-user-secret fa-xl ml-3 mt-2"></i></span> Realizamos investigaciones con personal experto en reunión de información</li>
+                            
+                            <li class="lh-lg mb-3"><span class="fa-li"><i class="fa-solid fa-camera fa-xl ml-3 mt-2 "></i></span> Obtencion de evidencia física judiciable, fotográfica o videográfica inobjetable.</li>
+                            
+                            <li class="lh-lg mb-3"><span class="fa-li"><i class="fa-solid fa-microphone fa-xl ml-3 mt-2"></i></span> Obtendremos material digitial, utilizando la ultima tecnologia disponible en el mercado</li>
+                            
+                            <li class="lh-lg mb-3"><span class="fa-li"><i class="fa-solid fa-circle-question fa-xl ml-3 mt-2"></i></span> Sepa el qué, el dondé, el cuándo, el cómo, el quien y el por y para qué de lo que le interesa saber.</li>
+                            
+                            <li class="lh-lg mb-3"><span class="fa-li"><i class="fa-solid fa-street-view fa-xl ml-3 mt-2"></i></span> Consulte sobre nuestro servicio de localización de personas. Informese sobre los ultimos paraderos y encuentre datos sobre la persona que busca, porque nadie puede esconderse para siempre.</li>
+                        </ul>
+
                     </div>
                 </div>
             </section>
@@ -122,22 +139,26 @@
             <br>
             <br>
 
-            <section class="main__seccion__soluciones">
+            <section class="container main__seccion__soluciones">
                 <h3 class="desplegable" id="SolTec">Soluciones Tecnologicas</h3>
-                <div class="main__servicios__soltec">
-                    <div class="main__seccion__soluciones1">
-                        <img src="img/soltec2.png" alt="tecnologico" >
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae necessitatibus possimus, accusantium aliquam maxime itaque repellat obcaecati ex dolore. Praesentium, placeat voluptate officiis quae possimus harum! Mollitia saepe minus accusantium.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione fugiat neque consequuntur, praesentium earum nemo, sunt sit corrupti a illo, nostrum iusto fuga. Veritatis ducimus blanditiis magni quas pariatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis laboriosam non consequatur placeat magni quos autem id exercitationem illo odio sit optio magnam architecto repellendus excepturi porro, corrupti, tenetur sed!
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore tempore, atque et voluptas laborum minus voluptate enim quae veniam delectus officia velit, eveniet consectetur eaque modi assumenda, a ab amet!
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima animi corrupti accusantium molestiae excepturi deleniti explicabo suscipit at, rem dolores ad officia, exercitationem error esse quibusdam eius possimus impedit eveniet?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis commodi rerum deleniti, voluptate ratione quos eos iure totam perspiciatis nam ab sequi, quaerat, expedita quam architecto. Quibusdam a dolorum atque?
-                        Esse quasi facilis veniam nisi error exercitationem sint beatae repellat hic labore id, cupiditate neque deserunt magni consequatur sequi, recusandae possimus dignissimos dolor alias cum minus nostrum. Corporis, perspiciatis quisquam.
-                        Doloribus perspiciatis delectus ducimus, molestiae inventore dignissimos eius doloremque laboriosam aperiam ipsa aliquam, consequatur, modi quam mollitia rerum itaque laborum tempora? Laborum atque eveniet molestias iusto doloremque dicta totam iste.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nisi nulla, facilis totam tenetur quasi officia cumque iusto veritatis et possimus at ducimus unde assumenda, corporis tempore maiores deserunt perferendis!
-                        Quam dolorem repellendus voluptatum fugiat dolores repellat odio facere atque aliquam quod quas, expedita facilis ipsa quia soluta eos dolore dicta sint nemo alias quaerat. Accusamus culpa eum fugiat pariatur.
+            
+                    <div class="clearfix main__servicios__soltec" id="serivcioitems1">
+                    
+                        <div class="main__seccion__soluciones1">
+                            <img src="img/soltec2.png" alt="tecnologico" >
+                        </div>
+                    
+                    
+                        <div class="servicios__detalle ml-3 mr-3 fs-4" >
+                            <li class="lh-lg mb-3"><span class="fa-li"></span><i class="fa-solid fa-satellite fa-xl ml-3 mt-2"></i> Utilizamos la ultima tecnologia para el posicionamiento global satelital en tiempo real. Sepa donde esta lo que usted mas quiera en cualquier momento.</li>
+                            
+                            <li class="lh-lg mb-3"><span class="fa-li"></span><i class="fa-solid fa-fingerprint fa-xl ml-3 mt-2"></i> Controles de ultima tecnologia, y restringa el acceso solo a quienes necesiten estar. </li>
+                            
+                            <li class="lh-lg mb-3"><span class="fa-li"></span> <i class="fa-solid fa-video fa-xl ml-3 mt-2"></i> Tenga acceso a videovigilancia y monitoree usted mismo su hogar, su indstria o la locacion que usted desee.</li>
+                            
+                            <li class="lh-lg "><span class="fa-li"></span><i class="fa-solid fa-broom fa-xl ml-3 mt-2"></i> Disponemos un equipo especializado en barrido y limpieza de dispositivos electronicos. Contamos con la tecnologia para ofrecer limpieza de microfonos, cámaras ocultas, GPS, o cualquier dispositivo que no deba estar en su oficina, su casa, su automovil o donde usted desee el servicio.</li>
+                            
+                        </div>
                     </div>
                 </div>
             </section>
@@ -146,50 +167,50 @@
             <br>
             <section class="main__seccion__capacitaciones">
                 <h3 class="desplegable" id="Capacitaciones">Capacitaciones</h3>
-                <div class="main__servicios__capacitaciones">
+                <div class="clearfix main__servicios__capacitaciones">
                     <div class="main__seccion__capacitaciones1">
                         <img src="img/capac2.jpg" alt="entrenamientos" >
                     </div>
-                    <div>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat iure corrupti assumenda quisquam perspiciatis sunt. Quae ea molestiae perferendis veritatis odit eum! Dignissimos eligendi blanditiis officiis ullam laboriosam. Facere, soluta. 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, libero! Expedita sed dolore, amet, assumenda officia adipisci atque odio quidem veritatis nobis sint nulla a inventore voluptates obcaecati nesciunt dicta.
-                        Sapiente eveniet ipsam quos accusamus odit soluta, vel rem non praesentium sed vitae facilis, at quia sit consequatur molestias! Inventore tenetur est, ipsa amet nam id? Facilis ducimus placeat fugiat!
-                        Aliquid ab incidunt ipsa velit autem animi quas explicabo enim et. Non alias laudantium ad quasi quod! Ipsa non, incidunt, temporibus dolorum repudiandae veritatis velit quibusdam deserunt eius est beatae?
-                        Voluptates dignissimos, ad consequuntur vero laudantium distinctio commodi sint animi tempore, cumque sit in ratione! Amet qui expedita, sed est reiciendis dolor nemo suscipit rem porro totam, ea architecto doloribus.
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam aut quod, ex magnam iure iusto sed consequatur repudiandae, animi voluptatem facilis atque qui doloribus dolore adipisci! Dignissimos provident incidunt consectetur.
-                        Nam, cupiditate. Error similique, sunt voluptatibus ea beatae ad ipsam dicta porro, molestiae soluta fugiat id quis. Dignissimos quisquam id delectus rerum fuga reprehenderit ipsam consectetur voluptas non! Inventore, placeat.
-                        Quod eius maiores corrupti voluptate consectetur labore veritatis quae quas sit dicta corporis error, rerum inventore expedita tempora accusantium delectus porro impedit iste! Et aspernatur iure fugit fuga atque suscipit!
-                        Cumque eum ab aspernatur mollitia expedita reiciendis fugiat voluptate consequatur modi inventore tenetur distinctio culpa ad praesentium, a nihil soluta laudantium sit totam? Qui neque laudantium cupiditate autem dolorum deserunt.
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore nisi veniam vitae, labore ea possimus perferendis quaerat accusamus asperiores reiciendis enim animi, temporibus beatae corrupti ex maxime explicabo odio consequatur!
-                        Quas unde reiciendis at aliquid non quo, itaque rerum ex eligendi quidem et, sequi optio animi eius, culpa nobis labore tenetur esse aut nihil illo eos provident corrupti eaque. Ipsa!
-                        Impedit eius aliquam illo velit provident, quidem id reiciendis odit nesciunt autem aliquid a at aut alias temporibus porro numquam excepturi obcaecati facilis, doloremque et expedita eaque blanditiis odio. Debitis?
+                    <div class="servicios__detalle ml-3 mr-3 fs-4">
+                        <p class="text-center">¿Puede alguien dar lo que no tiene? Realmente la capacitación es parte fundamental en la inversión de la seguridad que usted posee. Tenemos diferentes Programas de Capacitación en Seguridad, para personal de seguridad propiamente dicho, para sus empleados, para usted y su familia. Las Capacitaciones es una de las mejores inversiones en seguridad que usted puede hacer.</p>
+                        
+                        <p class="text-center">Algunas de nuestras capacitaciones</p>
+                        <ul class="fa-ul">
+                            <li class="lh-lg mb-3"><span class="fa-li"></span><i class="fa-solid fa-user-tie fa-xl ml-3 mt-2"></i> <span class="fs-4"> Formación de personal ideoneo en seguridad y custodia de personas</li>
+                        
+                            <li class="lh-lg mb-3"><span class="fa-li"></span><i class="fa-solid fa-gun fa-xl ml-3 mt-2"></i> <span class="fs-4"> Uso y defensa con armas de fuego. Disponemos de capacitaciones en todos los niveles, tanto para adultos como introducción a las armas de fuego para niños.</li>
+                        
+                            <li class="lh-lg mb-3"><span class="fa-li"></span><i class="fa-solid fa-star-of-life fa-xl ml-3 mt-2"></i> <span class="fs-4"> Sepa que hacer y que no hacer al momento de asistir a una persona o un ser querido. Primeros auxilios, RCP, uso de DEA, Control de hemorragias o asistencia médica de urgencia en combate.</li>
+                        
+                            <li class="lh-lg mb-3"><span class="fa-li"></span><i class="fa-solid fa-bone fa-xl ml-3 mt-2"></i> <span class="fs-4"> Contamos con entrenadores K9 especializados para el entrenamiento de canes. Obediencia, Guardia o entrenamientos especializados.</li>
+                        
+                            <li class="lh-lg mb-3"><span class="fa-li"></span><i class="fa-solid fa-fire-extinguisher fa-xl ml-3 mt-2"></i> <span class="fs-4"> Capacitaciones especiales en prevención de incendios y lucha contra el fuego. Medidas pasivas y activas y el correcto uso de los elementos disponibles en cada lugar.</li>
+                        
+                            <li class="lh-lg mb-3"><span class="fa-li"></span><i class="fa-solid fa-dharmachakra fa-xl ml-3 mt-2"></i> <span class="fs-4"> Manejo avanzado, evasivo y defensivo de un automovil. Conozca las ventajas y usos de un elemento tan importante como su propio auto.</li>
+                        </ul>
                     </div>
                 </div>
             </section>
             <br>
             <br>
             <br>
-            <section class="main__seccion__auditoria">
+            <section class="container main__seccion__auditoria">
                 <h3 class="desplegable" id="AyA">Asesoramiento y Auditorias</h3>
-                <div class="main__servicios__auditoria">
-                    <div class="main__seccion__auditoria1">
-                        <img src="img/auditorias2.jpg" alt="auditorias" >
+                    <div class="clearfix main__servicios__soltec" id="serivcioitems2">
+                        <div class="main__seccion__auditoria1">
+                            <img src="img/auditorias2.jpg" alt="auditorias" >
+                        </div>
+                        <div class="servicios__detalle ml-3 mr-3 fs-4" >
+                            <li class="lh-lg mb-3"><span class="fa-li"></span><i class="fa-solid fa-building fa-xl ml-3 mt-2"></i> Diseño de programas flexibles, dinámicos, eficientes y comprensibles para reducir los riesgos personales, patrimoniales, de información y reputación de nuestros clientes.</li>
+                            
+                            <li class="lh-lg mb-3"><span class="fa-li"></span><i class="fa-solid fa-house-chimney fa-xl ml-3 mt-2"></i> Análisis profesional de las amenazas y las vulnerabilidades asociadas a los activos del cliente. Determinación de riesgos y propuestas de medidas de mitigación. Integración de Recursos Humanos, Tecnología y Procedimientos. Mantenimiento de todos los sistemas instalados</li>
+                            
+                            <li class="lh-lg mb-3"><span class="fa-li"></span><i class="fa-solid fa-file-signature fa-xl ml-3 mt-2"></i> Control de inventario logístico, su estado y correcto funcionamiento, control de la documentación legal, capacitacion y capacidad de respuestas a distintos eventos. Confección de informes parciales y mensuales. Auditamos a los Prestadores de los Servicios de Seguridad, en las Plantas y durante las Custodias.</li>
+                            
+                            <li class="lh-lg mb-3"><span class="fa-li"></span><i class="fa-solid fa-lightbulb fa-xl ml-3 mt-2"></i> Diseño de programas flexibles, dinámicos, eficientes y comprensibles para reducir los riesgos personales, patrimoniales, de información y reputación de nuestros clientes. Realizamos Diagnósticos y sugerencias sobre problemas detectados.</li>
+                            
+                        </div>
                     </div>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto facere deleniti unde quibusdam, provident doloribus porro natus nulla assumenda quam harum? Beatae, placeat? Aperiam doloremque impedit reprehenderit nisi praesentium.
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum asperiores iste et itaque deleniti aliquam eius officiis. Delectus debitis aliquid eveniet sequi nostrum possimus, nihil quis commodi vel quasi consectetur.
-                        Pariatur expedita ducimus, enim doloribus facere repellendus aut placeat, magnam perspiciatis explicabo nemo culpa possimus veritatis totam ipsum aliquid, quos exercitationem aliquam eaque neque autem. Totam architecto aliquid minima blanditiis?
-                        Harum dicta delectus animi nostrum at, unde quasi ad sed autem odio inventore dignissimos nobis! A, fugiat nostrum. Laudantium repudiandae odit nisi soluta numquam excepturi reprehenderit porro est veritatis earum?
-                        Incidunt repudiandae similique nesciunt perferendis quis quasi iste praesentium consectetur vel voluptas reprehenderit recusandae ut non possimus ducimus, aperiam corrupti veritatis earum iure, atque deleniti quam harum. Quam, nam nihil.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere officia, ipsam, earum esse tempore nobis veniam provident error, ullam tenetur assumenda quidem id maiores et quibusdam aliquid qui voluptatem quo?
-                        Ea alias eveniet laboriosam veniam dolor iure dicta delectus? Animi, dolorem porro culpa non quis labore accusamus! Aperiam quis voluptas sint necessitatibus omnis. Perferendis, maxime quidem possimus necessitatibus quod dolor.
-                        Quibusdam eligendi, eum velit doloribus voluptatem corporis sequi quasi repudiandae magni, excepturi, inventore neque nisi est nulla ullam facilis? Fugiat consectetur praesentium cum excepturi ad amet harum eos quod obcaecati.
-                        Sint, voluptatum tempore velit harum distinctio vero corporis totam odio, aliquam officia ducimus dolor aut rerum aspernatur architecto provident, similique repellat voluptates blanditiis saepe? Reiciendis nostrum ipsum animi in assumenda.
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto dolorem explicabo aut libero voluptatem quia esse minus odit eaque nulla perspiciatis, ipsam delectus excepturi, maiores beatae illum commodi modi! Suscipit.
-                        Nihil doloribus sed dicta. Sint mollitia itaque, nemo quas nobis consequatur neque ea delectus consectetur earum exercitationem numquam, repellat nisi illo vel vitae reiciendis rem? Minus soluta velit inventore facilis.
-                        Nostrum nesciunt pariatur, sit ut totam quos excepturi blanditiis maiores expedita sint reprehenderit, quia ratione placeat libero sunt illo, nemo debitis accusantium sapiente accusamus dolores amet eius. Pariatur, enim dicta?
-                    </div>
-                </div>
             </section>
             <br>
             <img src="img/fullservice.jpg" class="d-none d-lg-block" alt="servicios" width="100%" id="imgservicios">
@@ -214,70 +235,90 @@
             </section>
             
         </main>
-
-        <br>
-        <br>
-
-
-        <br>
-        <br>
-        <br>
         <br>
 
         <!--PIE DE PAGINA-->
 
-        <footer class="footer">
-            <div class="footer__contenedor">
-                <div class="footer__columna1 subgrid__politicas">
-                    <p>Aviso Legal</p>
-                    <p>Politica de privacidad</p>
-                    <p>Politica de Cookies</p>          
+        <footer class="bg-dark text-center text-white">
+            
+            <div class="container p-4">
+        
+            <section class="mb-4">
+            
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f fa-xl"></i
+            ></a>
+            
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter fa-xl"></i
+            ></a>
+            
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram fa-xl"></i
+            ></a>
+        
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in fa-xl"></i
+            ></a>
+            
+            </section>
+            
+        
+            <section class="mb-4">
+                <h5 class="text-uppercase fw-bold">Contacto</h5>
+                <p><i class="fas fa-home mr-3"></i> CABA, Buenos Aires, Argentina</p>
+                <p><i class="fas fa-envelope mr-3"></i> contacto@soter.com.ar</p>
+                <p><i class="fas fa-phone mr-3"></i> +54 9 11 2024 3550</p>
+                <p><i class="fa-brands fa-whatsapp mr-3 fa-xl"></i> +54 9 11 2024 3549</p>
+            </section>
+            
+        
+            <section class="">
+                
+                <div class="row">
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        
+                    <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-white">Aviso Legal</a>
+                    </li>
+                    </ul>
                 </div>
-                <div class="footer__columna2">
-                    <div class="footer__columna2__redes subgrid__redes">
-                        
-                        <a href="#" class="redes__facebook" target="_blank">
-                            <i class="redes__sociales--size fa-brands fa-facebook-square"></i>
-                        </a>
-                                   
-                        <a href="#" class="redes__instagram" target="_blank">
-                            <i class="redes__sociales--size fa-brands fa-instagram-square"></i>
-                        </a>
-                                
-                        <a href="#" class="redes__linkedin" target="_blank">
-                            <i class="redes__sociales--size fa-brands fa-linkedin"></i>
-                        </a>
-                                    
-                        <a href="#" class="redes__twitter" target="_blank">
-                            <i class="redes__sociales--size fa-brands fa-twitter-square"></i>
-                         </a>
-
-                    </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        
+                    <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-white">Politica de Privacidad</a>
+                    </li>
+                    
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        
+                    <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-white">Politica de Cookies</a>
+                    </li>
                     
                 </div>
-                <div class="footer__columna3">
-                    <div class="columna3__contacto subgrid__contactos">
-                        <div class="columna3__contacto__whatsapp">
-                            <img src="img/whatsapp.png" alt="logo whatsapp" width="50px"> 
-                            <p>+54 9 11 2024 3549</p>
-                        </div>
-                        <div class="columna3__contacto__telefono">
-                            <img src="img/telefono-logo.png" alt="logo telefono" width="50px">
-                            <p>+54 9 11 2024 3550</p>
-                        </div>
-                        <div class="columna3__contacto__mail">
-                            <a href="mailto:contacto@soter.com.ar">
-                                <img src="img/email.png" alt="logo email" width="50px">
-                            </a>
-                            <p>contacto@soter.com.ar</p>
-                        </div>
-                    </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">  
+                    <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-white">Mapa del sitio</a>
+                    </li>
+                    </ul>
                 </div>
-               
+                
+                </div>
+                
+            </section>
+            
             </div>
-            <div class="subgrid__derechos">
-                <p> Todos los derechos reservados @ Soter</p>
-             </div>
+        
+            <div class="text-center p-3 derechos" id="zocalo">
+                Todos los derechos reservados @ Soter
+            </div>
+        
         </footer>
         
         <script src="js/bootstrap.bundle.min.js"></script>

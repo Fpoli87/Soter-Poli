@@ -45,3 +45,9 @@ Mejora visualizacion y ajustes en Mobile
 
 Incorporacion Iconos FontAwesome
 Aplicacion de Interlineados 
+
+-------------   Version 0.12   -------------------
+
+Ingreso contenido Servicios.html
+Nuevo Footer Responsive con Bootstrap 5
+Continuacion Reestructuracion del CSS en base a SASS
