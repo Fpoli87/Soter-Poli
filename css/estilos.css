@@ -42,7 +42,8 @@ header .header__contenedor .barra {
   margin: 0 0;
   z-index: 1000; }
   header .header__contenedor .barra .header__soter {
-    margin-left: 100px; }
+    margin-left: 100px;
+    }
   header .header__contenedor .barra ul {
     float: right;
     margin-right: 20px; }
@@ -109,11 +110,15 @@ header .header__contenedor .barra {
   width: auto;
   overflow: hidden; }
 
-@media (max-width: 1084px) {
-  .header__logo {
+@media (max-width: 1101px) {
+  nav .header__logo {
     padding: 15px; }
-  .header__soter {
-    margin-left: 60px; } }
+  nav .header__soter {
+    margin-left: 60px;
+    font-size: 1;
+    }
+
+img.header__soter {} }
 
 @media (max-width: 1044px) {
   .header__logo {

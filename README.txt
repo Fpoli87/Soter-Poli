@@ -51,3 +51,8 @@ Aplicacion de Interlineados
 Ingreso contenido Servicios.html
 Nuevo Footer Responsive con Bootstrap 5
 Continuacion Reestructuracion del CSS en base a SASS
+
+-------------   Version 0.13   -------------------
+
+Correccion Margenes en Navbar y Servicios en Mobile
+Nuevos colores en Footer
