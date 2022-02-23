@@ -66,5 +66,11 @@ Nuevos Colores con mejor contraste
 Modificacion de Navbar
 Se agrega .gitignore
 
+-------------   Version 0.15   -------------------
 
+Optimizacion imagenes, colocacion descripcion y Keywords en Acerca.html
+Optimizacion imagenes, colocacion descripcion y Keywords en Index.html
+Optimizacion imagenes, colocacion descripcion y Keywords en Equipo.html
+Optimizacion imagenes, colocacion descripcion y Keywords en Contacto.html
+Optimizacion imagenes, colocacion descripcion y Keywords en Servicios.html
 

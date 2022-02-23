@@ -258,6 +258,12 @@ main {
     padding-top: 3rem;
 }
 
+.img--lg,
+.img--md,
+.img--sm {
+    display: none;
+}
+
 h1{
     text-align: $centrado;
     font-size: 4rem;
@@ -342,10 +348,8 @@ h4 {
 }
 
 
-
-
 @media screen and (max-width: 922px) {
-    
+   
     .seccion__inicio {
         font-size: 1.7rem;
         p {
