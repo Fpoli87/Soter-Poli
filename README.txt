@@ -74,3 +74,7 @@ Optimizacion imagenes, colocacion descripcion y Keywords en Equipo.html
 Optimizacion imagenes, colocacion descripcion y Keywords en Contacto.html
 Optimizacion imagenes, colocacion descripcion y Keywords en Servicios.html
 
+-------------   Version 0.16   -------------------
+
+Corrección errores en contenido
+Corrección de imagenes en Servicios.html
