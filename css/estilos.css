@@ -1,3 +1,5 @@
+@import url(_variables.scss);
+@import url(_mixins.scss);
 * {
   margin: 0px;
   padding: 0px;
@@ -20,30 +22,27 @@
 .header {
   grid-area: header; }
 
-.main__imagenestop {
-  grid-area: imagenestop;
+.column1-4, .main__imagenestop, .main, .main__equipo, .main__servicios, footer {
   grid-column-start: 1;
   grid-column-end: 4; }
 
+.main__imagenestop {
+  grid-area: imagenestop; }
+
 .main {
-  grid-area: main;
-  grid-column-start: 1;
-  grid-column-end: 4; }
+  grid-area: main; }
 
 .footer__contenedor {
   grid-area: footer; }
 
 /*  HEADER  */
 header .header__contenedor .barra {
-  background-color: cornflowerblue;
+  background-color: #4b6587;
   width: 100%;
   height: 80px;
   position: fixed;
   margin: 0 0;
   z-index: 1000; }
-  header .header__contenedor .barra .header__soter {
-    margin-left: 100px;
-    }
   header .header__contenedor .barra ul {
     float: right;
     margin-right: 20px; }
@@ -61,15 +60,12 @@ header .header__contenedor .barra {
       transition: 1s; }
 
 .header__logo {
-  position: absolute;
-  padding: 20px 50px; }
-  .header__logo .header__logo1 {
-    height: 50px; }
+  position: absolute; }
 
 .nav__checkmenu {
   float: right;
   line-height: 80px;
-  margin-right: 40px;
+  margin-right: 20px;
   cursor: pointer;
   display: none; }
 
@@ -106,27 +102,9 @@ header .header__contenedor .barra {
 #menu4:hover .header__submenu {
   display: block;
   text-align: left;
-  background-color: #2566df;
+  background-color: #6c757d;
   width: auto;
   overflow: hidden; }
-
-@media (max-width: 1101px) {
-  nav .header__logo {
-    padding: 15px; }
-  nav .header__soter {
-    margin-left: 60px;
-    font-size: 1;
-    }
-
-img.header__soter {} }
-
-@media (max-width: 1044px) {
-  .header__logo {
-    padding: 15px; }
-  .header__soter {
-    margin-left: 60px; }
-  .header__navmenu li a {
-    font-size: 1rem; } }
 
 @media (max-width: 953px) {
   .nav__checkmenu {
@@ -135,7 +113,7 @@ img.header__soter {} }
     position: fixed;
     width: 100%;
     height: calc(100% - 80px);
-    background: #1c1c8d;
+    background: #6c757d;
     top: 80px;
     left: -100%;
     text-align: left;
@@ -204,13 +182,15 @@ h4 {
   font-size: 1.8rem;
   margin: 1rem; }
 
+.secciones__celeste, .seccion__inicio, #Mision, .secciones__equipo2 {
+  background: #90ade2;
+  width: 100%;
+  color: white;
+  font-size: 1.5rem; }
+
 /* Inicio  */
 /*Grid inicio*/
 .seccion__inicio {
-  background: cornflowerblue;
-  color: white;
-  width: 100%;
-  font-size: 1.5rem;
   text-align: center;
   grid-column-start: 1;
   grid-column-end: 2; }
@@ -297,10 +277,6 @@ h4 {
   margin-top: 0.8rem; }
 
 #Mision {
-  background: cornflowerblue;
-  width: 100%;
-  color: white;
-  font-size: 1.5rem;
   margin-left: 0;
   padding-left: 1rem; }
 
@@ -352,8 +328,6 @@ h4 {
   margin-right: 0;
   padding-left: 0;
   width: 100%;
-  grid-column-start: 1;
-  grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4; }
   .main__equipo h3 {
@@ -365,14 +339,9 @@ h4 {
   text-align: justify;
   font-family: 'Open Sans', sans-serif; }
 
-.secciones__equipo2 {
-  background: cornflowerblue;
-  color: white;
-  width: 100%;
-  font-size: 1.5rem; }
-  .secciones__equipo2 p {
-    margin: 1rem 1.5rem;
-    text-align: justify; }
+.secciones__equipo2 p {
+  margin: 1rem 1.5rem;
+  text-align: justify; }
 
 .equipo__subtitulos--derecha {
   text-align: right; }
@@ -393,8 +362,6 @@ h4 {
   margin-left: 1.2rem;
   margin-right: 1.2rem;
   padding-left: 0;
-  grid-column-start: 1;
-  grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4; }
 
@@ -488,7 +455,7 @@ textarea {
 
 #enviar, #reset {
   width: 50%;
-  background-color: #25344b;
+  background-color: #4b6587;
   color: white;
   border: none;
   box-sizing: border-box;
@@ -552,8 +519,6 @@ footer {
   margin-top: 6px;
   clear: both;
   width: 100%;
-  grid-column-start: 1;
-  grid-column-end: 4;
   grid-row-start: 5;
   grid-row-end: 6; }
 
@@ -577,20 +542,19 @@ footer {
   align-items: center;
   justify-content: center; }
 
+/*
 #facebook,
 #instagram,
 #linkedin,
 #twitter,
 .redes__sociales--size {
-  font-size: 100px !important;
-  color: black !important; }
-  #facebook:hover,
-  #instagram:hover,
-  #linkedin:hover,
-  #twitter:hover,
-  .redes__sociales--size:hover {
-    color: cornflowerblue !important; }
+    font-size: 100px!important;
+    color: black!important;
 
+    &:hover {
+        color: cornflowerblue!important;
+    }
+}*/
 .subgrid__derechos {
   margin-top: 5px;
   margin-bottom: 1rem;

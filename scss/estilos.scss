@@ -1,3 +1,7 @@
+@import url(_variables.scss);
+@import url(_mixins.scss);
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -27,16 +31,19 @@
     grid-area: header;
 }
 
-.main__imagenestop {
-    grid-area: imagenestop;
+.column1-4 {
     grid-column-start: 1;
     grid-column-end: 4;
 }
 
+.main__imagenestop {
+    grid-area: imagenestop;
+    @extend .column1-4;
+}
+
 .main {
     grid-area: main;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    @extend .column1-4;
 }
 
 .footer__contenedor {
@@ -52,16 +59,12 @@ header {
     .header__contenedor {
 
         .barra {
-            background-color: cornflowerblue;
+            background-color: #4b6587;
             width: 100%;
             height: 80px;
             position: fixed;
             margin: 0 0;
             z-index: 1000;
-
-            .header__soter {
-                margin-left: 100px;
-            }
 
             ul {
                 float: right;
@@ -99,21 +102,19 @@ header {
 
 
 .header__logo {
-    position: absolute;
-    padding: 20px 50px;
-
-    .header__logo1 {
-        height: 50px;
-    }
+    position: absolute;    
 }
+
+
 
 
 .nav__checkmenu{
     float: right;
     line-height: 80px;
-    margin-right: 40px;
+    margin-right: 20px;
     cursor: pointer;
     display: none;
+
 }
 
 #menu_check {
@@ -143,8 +144,8 @@ header {
 .header__submenu {
     position: absolute;
     display: none;
-    text-align: center;
-    align-items: center;
+    text-align: $centrado;
+    align-items: $centrado;
     margin: 0 0;
         li {
             a{
@@ -161,43 +162,11 @@ header {
 #menu4:hover .header__submenu {
     display: block;
     text-align: left;
-    background-color: rgb(37, 102, 223);
+    background-color: #6c757d;
     width: auto;
     overflow: hidden;
 } 
-
-@media (max-width: 1101px) {
-
-    nav {
-        .header__logo {
-            padding: 15px;
-        }
     
-        .header__soter {
-            margin-left: 60px;
-        }
-    }
-    
-
-}
-
-@media (max-width: 1044px) {
-    .header__logo {
-        padding: 15px;
-    }
-
-    .header__soter {
-        margin-left: 60px;
-    }
-
-    .header__navmenu {
-        li {
-            a {
-                font-size: 1rem;
-            } 
-        }
-    }
-}
 
 @media (max-width: 953px) {
     .nav__checkmenu {
@@ -208,7 +177,7 @@ header {
         position: fixed;
         width: 100%;
         height: calc(100% - 80px);
-        background:rgb(28, 28, 141);
+        background: #6c757d;
         top: 80px;
         left: -100%;
         text-align: left;
@@ -290,28 +259,35 @@ main {
 }
 
 h1{
-    text-align: center;
+    text-align: $centrado;
     font-size: 4rem;
     margin: 1.2rem;
 }
 
 h2 { 
-    text-align: center;
+    text-align: $centrado;
     font-size: 3rem;
     margin: 1.2rem;
 }
 
 h3 {
-    text-align: center;
+    text-align: $centrado;
     font-size: 3rem;
     clear: both;
     margin: 1rem;
 }
 
 h4 {
-    text-align: center;
+    text-align: $centrado;
     font-size: 1.8rem;
     margin: 1rem;
+}
+
+.secciones__celeste {
+    background: rgb(144, 173, 226);
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
 }
 
        /* Inicio  */
@@ -320,11 +296,8 @@ h4 {
 
 
 .seccion__inicio {
-    background: cornflowerblue;
-    color: white;
-    width: 100%;
-    font-size: 1.5rem;
-    text-align: center;
+    @extend .secciones__celeste;
+    text-align: $centrado;
     grid-column-start: 1;
     grid-column-end: 2;
 
@@ -340,8 +313,8 @@ h4 {
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
-    align-content: center;
-    text-align: center;
+    align-content: $centrado;
+    text-align: $centrado;
     margin: 1rem 1rem;
 
     div {
@@ -385,8 +358,8 @@ h4 {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        align-content: center;
-        text-align: center;
+        align-content: $centrado;
+        text-align: $centrado;
         margin: 0.8rem;
     }
 
@@ -424,7 +397,7 @@ h4 {
 
 .seccion__acerca__mision, 
 .seccion__acerca__valores {
-    text-align: center;
+    text-align: $centrado;
     margin-right: 1rem;
 }
 
@@ -453,10 +426,8 @@ h4 {
 }
 
 #Mision {
-    background: cornflowerblue;
-    width: 100%;
-    color: white;
-    font-size: 1.5rem;
+    @extend .secciones__celeste;
+
     margin-left: 0;
     padding-left: 1rem;
     
@@ -497,7 +468,7 @@ h4 {
     .main__secciones__valores {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: $centrado;
         font-size: 1rem;
         flex-wrap: wrap;
         margin-left: 2rem;
@@ -505,11 +476,11 @@ h4 {
 
     .main__secciones__valores1 {
         display: flex;
-        justify-content: center;
+        justify-content: $centrado;
     }
 
     .main__valores__titulo {
-        text-align: center;
+        text-align: $centrado;
     }
     .main__valores__lista {
         display: flex;
@@ -534,8 +505,7 @@ h4 {
     margin-right: 0;
     padding-left: 0;
     width: 100%;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    @extend .column1-4;
     grid-row-start: 3;
     grid-row-end: 4;
 
@@ -553,10 +523,8 @@ h4 {
     
 }
 .secciones__equipo2 {
-    background: cornflowerblue;
-    color: white;
-    width: 100%;
-    font-size: 1.5rem;
+    @extend .secciones__celeste;
+
 
     p {
         margin: 1rem 1.5rem;
@@ -595,40 +563,33 @@ h4 {
     margin-right: 1.2rem;
     padding-left: 0;
    
-    grid-column-start: 1;
-    grid-column-end: 4;
+    @extend .column1-4;
     grid-row-start: 3;
     grid-row-end: 4;
 }
 
 .main__seccion__custodias1 {
-    float: left;
-    padding: 0.5rem;
+    @include ubicacion (left);
 }
 
 .main__seccion__investigacion1 {
-    float: right;
-    padding: 0.5rem;
+    @include ubicacion (right);
 }
 
 .main__seccion__soluciones1 {
-    float: left;
-    padding: 0.5rem;
+    @include ubicacion (left);
 }
 
 .main__seccion__capacitaciones1 {
-    float: right;
-    padding: 0.5rem;
+    @include ubicacion (right);
 }
 
 .main__seccion__auditoria1 {
-    float: left;
-    padding: 0.5rem;
+    @include ubicacion (left);
 }
 
 .main__seccion__mapa {
-    float: left;
-    padding: 0.5rem;
+    @include ubicacion (right);
 }
 
 #imgservicios {
@@ -653,7 +614,7 @@ h4 {
     .main__servicios__auditoria  {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: $centrado;
         font-size: 1.5rem;
         margin-right: 1rem;
     }
@@ -695,7 +656,7 @@ h4 {
     margin: auto;
     background: rgba(0, 0, 0, 0.4);
     color: white;
-    text-align: center;
+    text-align: $centrado;
 }
 
 select {
@@ -718,7 +679,7 @@ textarea {
 
 #enviar, #reset {
     width: 50%;
-    background-color: rgb(37, 52, 75);
+    background-color: #4b6587;
     color: white;
     border: none;
     box-sizing: border-box;
@@ -743,7 +704,7 @@ textarea {
     p {
         margin-top: 1.2rem;
         margin-bottom: 1.5rem;
-        text-align: center;
+        text-align: $centrado;
         font-size: 1.5rem;
     }
 }
@@ -767,13 +728,13 @@ textarea {
     .seccion__locacion {
         display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
+        justify-content: $centrado;
         margin: 1.2rem 1.5rem;
     }
 
     .main__seccion__mapa {
         display: flex;
-        justify-content: center;
+        justify-content: $centrado;
     }
 }
 
@@ -817,8 +778,7 @@ footer {
     margin-top: 6px;
     clear: both;
     width: 100%;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    @extend .column1-4;
     grid-row-start: 5;
     grid-row-end: 6;
 
@@ -836,8 +796,8 @@ footer {
 .footer__columna1 {
     display: flex;
     flex-direction: column;
-    justify-items: center;
-    justify-content: center;
+    justify-items: $centrado;
+    justify-content: $centrado;
     font-size: 1.2rem;
     
 }
@@ -845,27 +805,15 @@ footer {
 .footer__columna2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: $centrado;
+    justify-content: $centrado;
 }
 
-#facebook,
-#instagram,
-#linkedin,
-#twitter,
-.redes__sociales--size {
-    font-size: 100px!important;
-    color: black!important;
-
-    &:hover {
-        color: cornflowerblue!important;
-    }
-}
 
 .subgrid__derechos  {
     margin-top: 5px;
     margin-bottom: 1rem;
-    text-align: center;
+    text-align: $centrado;
     font-size: 1.2rem;
 }
 
@@ -878,20 +826,20 @@ footer {
 
 .columna3__contacto__whatsapp {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: $centrado;
+    align-items: $centrado;
 }
 
 .columna3__contacto__telefono {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: $centrado;
+    align-items: $centrado;
 }
 
 .columna3__contacto__mail {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: $centrado;
+    align-items: $centrado;
 }
 
 
@@ -901,13 +849,13 @@ footer {
     
     .subgrid__politicas {
         grid-area: politicas;
-        text-align: center;
+        text-align: $centrado;
     }
 
     .subgrid__redes {
         grid-area: redes;
         align-content: space-between;
-        align-items: center;
+        align-items: $centrado;
     }
 
     .subgrid__derechos {
@@ -929,6 +877,6 @@ footer {
         "contactos"
         "politicas"
         "derechos";
-        justify-content: center;
+        justify-content: $centrado;
     }
 }

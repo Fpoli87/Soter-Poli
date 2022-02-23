@@ -56,3 +56,15 @@ Continuacion Reestructuracion del CSS en base a SASS
 
 Correccion Margenes en Navbar y Servicios en Mobile
 Nuevos colores en Footer
+
+-------------   Version 0.14   -------------------
+
+Uso de @Extend para reutilizar codigo en Grids y Fondos de Secciones
+Uso de @mixin para ubicacion de elementos flotantes
+Nuevas variables para 
+Nuevos Colores con mejor contraste
+Modificacion de Navbar
+Se agrega .gitignore
+
+
+

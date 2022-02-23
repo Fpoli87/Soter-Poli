@@ -1,0 +1,4 @@
+@mixin ubicacion ($position) {
+    float: $position;
+    padding: 0.5rem;
+}
