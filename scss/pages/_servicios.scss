@@ -1,0 +1,85 @@
+/* SERVICIOS  */
+
+.main__servicios {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    padding-left: 0;
+   
+    @extend .column1-4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.main__seccion__custodias1 {
+    @include ubicacion (left);
+}
+
+.main__seccion__investigacion1 {
+    @include ubicacion (right);
+}
+
+.main__seccion__soluciones1 {
+    @include ubicacion (left);
+}
+
+.main__seccion__capacitaciones1 {
+    @include ubicacion (right);
+}
+
+.main__seccion__auditoria1 {
+    @include ubicacion (left);
+}
+
+.main__seccion__mapa {
+    @include ubicacion (right);
+}
+
+#imgservicios {
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+#servicioitems,
+#servicioitems1,
+#servicioitems2 {
+    div {
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+}
+
+@media screen and (max-width: 938px) {
+    .main__servicios__custodias,
+    .main__servicios__investigaciones,
+    .main__servicios__soltec,
+    .main__servicios__capacitaciones,
+    .main__servicios__auditoria  {
+        display: flex;
+        flex-direction: column;
+        justify-content: $centrado;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+
+    .main__seccion__custodias1 img,
+    .main__seccion__investigacion1 img,
+    .main__seccion__soluciones1 img,
+    .main__seccion__capacitaciones1 img,
+    .main__seccion__auditoria1 img {
+        width: 100%;
+    }
+
+    #imgservicios {
+        height: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 938px) {
+    #servicios {
+        display: none;
+    }
+
+    .main__servicios--mobile {
+        display: flex;
+    }
+}

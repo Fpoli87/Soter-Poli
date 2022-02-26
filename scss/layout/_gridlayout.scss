@@ -1,0 +1,39 @@
+    /* Grid Layout */
+    .cuerpo {
+        display: grid;
+    }
+    
+    .grid__container{
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: 2.5rem repeat(3, auto);
+        gap: 0;
+        grid-template-areas: 
+        "header"
+        "imagenestop"
+        "main"
+        "footer";
+    }
+    
+    .header {
+        grid-area: header;
+    }
+    
+    .column1-4 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    
+    .main__imagenestop {
+        grid-area: imagenestop;
+        @extend .column1-4;
+    }
+    
+    .main {
+        grid-area: main;
+        @extend .column1-4;
+    }
+    
+    .footer__contenedor {
+        grid-area: footer;
+    }
+    

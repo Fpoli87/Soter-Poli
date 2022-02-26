@@ -78,3 +78,8 @@ Optimizacion imagenes, colocacion descripcion y Keywords en Servicios.html
 
 Corrección errores en contenido
 Corrección de imagenes en Servicios.html
+
+-------------   Version 0.17   -------------------
+
+Creacion carpetas dentro de scss
+Nueva organizacion de los archivos

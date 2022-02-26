@@ -1,0 +1,123 @@
+ /*   FOOTER   */
+
+ footer {
+    background-color: #4b6587;
+    margin-top: 6px;
+    clear: both;
+    width: 100%;
+    @extend .column1-4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+
+}
+
+.facebook {
+    color: map-get($redes, facebook);
+}
+.twitter {
+    color: map-get($redes, twitter);
+}
+
+.linkedin {
+    color: map-get($redes, linkedin);
+}
+.instagram {
+    color: map-get($redes, instagram);
+}
+
+
+.footer__contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+
+.footer__columna1 {
+    display: flex;
+    flex-direction: column;
+    justify-items: $centrado;
+    justify-content: $centrado;
+    font-size: 1.2rem;
+    
+}
+
+.footer__columna2 {
+    display: flex;
+    flex-direction: column;
+    align-items: $centrado;
+    justify-content: $centrado;
+}
+
+
+.subgrid__derechos  {
+    margin-top: 5px;
+    margin-bottom: 1rem;
+    text-align: $centrado;
+    font-size: 1.2rem;
+}
+
+.footer__columna3 {
+    margin-top: 0px;
+    margin-right: 0;    
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.columna3__contacto__whatsapp {
+    display: flex;
+    justify-content: $centrado;
+    align-items: $centrado;
+}
+
+.columna3__contacto__telefono {
+    display: flex;
+    justify-content: $centrado;
+    align-items: $centrado;
+}
+
+.columna3__contacto__mail {
+    display: flex;
+    justify-content: $centrado;
+    align-items: $centrado;
+}
+
+
+       /*  FOOTER MOBILE */
+
+@media screen and (max-width: 724px) {
+    
+    .subgrid__politicas {
+        grid-area: politicas;
+        text-align: $centrado;
+    }
+
+    .subgrid__redes {
+        grid-area: redes;
+        align-content: space-between;
+        align-items: $centrado;
+    }
+
+    .subgrid__derechos {
+        grid-area: derechos;
+        font-size: 1.3rem;
+    }
+
+    .subgrid__contactos {
+        grid-area: contactos;
+    }
+    
+    .footer__contenedor {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, auto);
+        gap: 0.5rem;
+        grid-template-areas: 
+        "redes"
+        "contactos"
+        "politicas"
+        "derechos";
+        justify-content: $centrado;
+    }
+}

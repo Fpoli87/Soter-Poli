@@ -1,0 +1,54 @@
+ /* EQUIPO */
+
+ .main__equipo {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    width: 100%;
+    @extend .column1-4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    h3 {
+        font-family: 'Luxurious Roman', cursive;
+    }
+}
+
+
+.secciones__equipo1 {
+    font-size: 1.3rem;
+    margin: 1.5rem 2rem;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.secciones__equipo2 {
+    @extend .secciones__celeste;
+
+
+    p {
+        margin: 1rem 1.5rem;
+        text-align: justify;
+    }
+}
+
+
+.equipo__subtitulos--derecha {
+    text-align: right;
+}
+
+.equipo__subtitulos--izquierda {
+    text-align: left;
+}
+
+.main__seccion__banderas--larga {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media screen and (max-width: 980px) {
+
+    .secciones__equipo1 {
+        font-size: 1.5rem;
+    }
+}

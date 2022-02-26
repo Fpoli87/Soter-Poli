@@ -1,0 +1,57 @@
+  /*     BODY     */
+
+  body{
+    margin: 0 0;
+    padding: 0;
+    height: auto;
+    overflow-x: hidden;
+    
+}
+
+main {
+    padding-top: 2rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+.main__imagenestop {
+    padding-top: 3rem;
+}
+
+.img--lg,
+.img--md,
+.img--sm {
+    display: none;
+}
+
+h1{
+    text-align: $centrado;
+    font-size: 4rem;
+    margin: 1.2rem;
+}
+
+h2 { 
+    text-align: $centrado;
+    font-size: 3rem;
+    margin: 1.2rem;
+}
+
+h3 {
+    text-align: $centrado;
+    font-size: 3rem;
+    clear: both;
+    margin: 1rem;
+}
+
+h4 {
+    text-align: $centrado;
+    font-size: 1.8rem;
+    margin: 1rem;
+}
+
+.secciones__celeste {
+    background: rgb(144, 173, 226);
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+}
