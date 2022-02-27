@@ -83,3 +83,8 @@ Corrección de imagenes en Servicios.html
 
 Creacion carpetas dentro de scss
 Nueva organizacion de los archivos
+
+-------------   Version 0.18   -------------------
+
+Nuevos mapas y variables SASS
+Reemplazo de nuevos valores y variables

@@ -5,17 +5,20 @@
 
 .seccion__inicio {
     @extend .secciones__celeste;
-        text-align: $centrado;
-        grid-column-start: 1;
-        grid-column-end: 2;
+    text-align: $centrado;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-left: 20px;
+    padding-right: 30px;
         
-        p {
-            margin-block-end: 5px;
-            margin-block-start: 5px;
-            padding: 0px 10px;
-        }
+    p {
+        margin-block-end: 5px;
+        margin-block-start: 5px;
+        padding: 0px 10px;
+    }
 }
         
+/* Tarjetas Centrales */
         
 .seccion__tarjetas {
     display: flex;
@@ -24,6 +27,8 @@
     align-content: $centrado;
     text-align: $centrado;
     margin: 1rem 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
         
     div {
         p {
@@ -53,7 +58,7 @@
 @media screen and (max-width: 922px) {
            
     .seccion__inicio {
-        font-size: 1.7rem;
+        font-size: map-get($fontsize, 107);
         p {
             padding-left: 3px;
             padding-right: 3px;
@@ -70,7 +75,7 @@
     }
         
     .seccion__tarjetas__texto--fuente {
-        font-size: 1.2rem;
+        font-size: map-get($fontsize, 102);
     }
     .seccion__tarjetaizq {
         width: auto;               

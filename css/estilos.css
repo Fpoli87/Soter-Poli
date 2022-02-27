@@ -22,35 +22,11 @@
 .menu__animate--delay4 {
   animation-delay: 1.2s; }
 
-.red--twitter {
-  background: #51aff8; }
-  .red--twitter:hover {
-    background: white; }
-    .red--twitter:hover .red__nombre {
-      color: #51aff8; }
-
-.red--facebook {
-  background: #2956a3; }
-  .red--facebook:hover {
-    background: white; }
-    .red--facebook:hover .red__nombre {
-      color: #2956a3; }
-
-.red--linkedin {
-  background: #0076b8; }
-  .red--linkedin:hover {
-    background: white; }
-    .red--linkedin:hover .red__nombre {
-      color: #0076b8; }
-
-.red--instagram {
-  background: #ce1312; }
-  .red--instagram:hover {
-    background: white; }
-    .red--instagram:hover .red__nombre {
-      color: #ce1312; }
-
 /*---- ubicacion img servicios ---- */
+/* -- Estilos titulos  --*/
+/*-- colores header -- */
+/* -- Colores secciones -- */
+/* --  Colores Footer  -- */
 /* Layout */
 /*  HEADER  */
 header .header__contenedor .barra {
@@ -137,18 +113,11 @@ header .header__contenedor .barra {
     transition: all 0.5s;
     display: flex;
     flex-direction: column; }
-  .header__navmenu li {
-    display: flex;
-    flex-direction: column;
-    margin: 50px 0;
-    line-height: 30px; }
-    .header__navmenu li a {
-      color: cornflowerblue;
-      font-size: 1.1rem;
+    .header__navmenu li {
       display: flex;
-      flex-direction: column; }
-      .header__navmenu li a:hover {
-        background: none; }
+      flex-direction: column;
+      margin: 50px 0;
+      line-height: 30px; }
   .menu__animate-delay1 {
     animation-delay: 0.0s; }
   .menu__animate-delay2 {
@@ -230,8 +199,8 @@ h2 {
 h3 {
   text-align: center;
   font-size: 3rem;
-  clear: both;
-  margin: 1rem; }
+  margin: 1rem;
+  clear: both; }
 
 h4 {
   text-align: center;
@@ -252,18 +221,6 @@ footer {
   width: 100%;
   grid-row-start: 5;
   grid-row-end: 6; }
-
-.facebook {
-  color: #2956a3; }
-
-.twitter {
-  color: #51aff8; }
-
-.linkedin {
-  color: #0076b8; }
-
-.instagram {
-  color: #ce1312; }
 
 .footer__contenedor {
   display: flex;
@@ -340,19 +297,24 @@ footer {
 .seccion__inicio {
   text-align: center;
   grid-column-start: 1;
-  grid-column-end: 2; }
+  grid-column-end: 2;
+  padding-left: 20px;
+  padding-right: 30px; }
   .seccion__inicio p {
     margin-block-end: 5px;
     margin-block-start: 5px;
     padding: 0px 10px; }
 
+/* Tarjetas Centrales */
 .seccion__tarjetas {
   display: flex;
   box-sizing: border-box;
   justify-content: space-between;
   align-content: center;
   text-align: center;
-  margin: 1rem 1rem; }
+  margin: 1rem 1rem;
+  padding-left: 20px;
+  padding-right: 20px; }
   .seccion__tarjetas div p a {
     text-decoration: none;
     color: black; }

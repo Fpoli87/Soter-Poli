@@ -16,7 +16,7 @@
 
 
 .secciones__equipo1 {
-    font-size: 1.3rem;
+    font-size: map-get($fontsize, 103);
     margin: 1.5rem 2rem;
     text-align: justify;
     font-family: 'Open Sans', sans-serif;
@@ -49,6 +49,6 @@
 @media screen and (max-width: 980px) {
 
     .secciones__equipo1 {
-        font-size: 1.5rem;
+        font-size: map-get($fontsize, 105);
     }
 }

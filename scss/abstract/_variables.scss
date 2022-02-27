@@ -1,8 +1,8 @@
 $centrado: center;
 
 
-
 /* maps */
+
 $animacion:(
     delay1: 0.3s, 
     delay2: 0.6s, 
@@ -11,20 +11,14 @@ $animacion:(
 );
 
 $fontsize:(
-    1r: 1rem,
-    1-1r: 1.1rem,
-    1-2r: 1.2rem,
-    1-3r: 1.3rem,
-    1-5r: 1.5rem,
-    1-7r: 1.7rem,
-    1-8r: 1.8rem,
-    3r: 3rem,
-    4r: 4rem
+    1: 1rem,
+    101: 1.1rem,
+    102: 1.2rem,
+    103: 1.3rem,
+    105: 1.5rem,
+    107: 1.7rem,
+    108: 1.8rem,
+    3: 3rem,
+    4: 4rem
 );
 
-$redes:(
-	twitter: #51aff8,
-	facebook: #2956a3,
-	linkedin: #0076b8,
-	instagram: #ce1312
-);

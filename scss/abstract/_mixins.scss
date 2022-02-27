@@ -6,3 +6,32 @@
     float: $position;
     padding: 0.5rem;
 }
+
+/* -- Estilos titulos  --*/
+
+@mixin titulos {
+    h1{
+        text-align: $centrado;
+        font-size: map-get($fontsize, 4);
+        margin: 1.2rem;
+    }
+
+    h2{
+        text-align: $centrado;
+        font-size: map-get($fontsize, 3);
+        margin: 1.2rem;
+    }
+
+    h3{
+        text-align: $centrado;
+        font-size: map-get($fontsize, 3);
+        margin: 1rem;
+        clear:both;
+    }
+
+    h4{
+        text-align: $centrado;
+        font-size: map-get($fontsize, 108);
+        margin: 1rem;
+    }
+}

@@ -24,34 +24,13 @@ main {
     display: none;
 }
 
-h1{
-    text-align: $centrado;
-    font-size: 4rem;
-    margin: 1.2rem;
-}
 
-h2 { 
-    text-align: $centrado;
-    font-size: 3rem;
-    margin: 1.2rem;
-}
+@include titulos;
 
-h3 {
-    text-align: $centrado;
-    font-size: 3rem;
-    clear: both;
-    margin: 1rem;
-}
-
-h4 {
-    text-align: $centrado;
-    font-size: 1.8rem;
-    margin: 1rem;
-}
 
 .secciones__celeste {
-    background: rgb(144, 173, 226);
+    background: $colorfondo;
     width: 100%;
-    color: white;
-    font-size: 1.5rem;
+    color: $colorfont;
+    font-size: map-get($fontsize, 105);
 }
