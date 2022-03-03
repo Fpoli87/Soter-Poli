@@ -169,14 +169,14 @@ header .header__contenedor .barra {
 /*     BODY     */
 body {
   margin: 0 0;
-  padding: 0;
+  padding: 0px;
   height: auto;
   overflow-x: hidden; }
 
 main {
   padding-top: 2rem;
-  margin-left: 0rem;
-  margin-right: 0rem; }
+  margin-left: 0px;
+  margin-right: 0px; }
 
 .main__imagenestop {
   padding-top: 3rem; }
@@ -227,7 +227,7 @@ footer {
   justify-content: space-between;
   padding: 1.2rem;
   flex-wrap: wrap;
-  margin-bottom: 0; }
+  margin-bottom: 0px; }
 
 .footer__columna1 {
   display: flex;
@@ -320,13 +320,22 @@ footer {
     color: black; }
 
 .seccion__tarjetaizq {
-  width: 30%; }
+  width: 30%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 5px; }
 
 .seccion__tarjetacentral {
-  width: 30%; }
+  width: 30%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 5px; }
 
 .seccion__tarjetaderecha {
-  width: 30%; }
+  width: 30%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 5px; }
 
 @media screen and (max-width: 922px) {
   .seccion__inicio {
@@ -352,12 +361,12 @@ footer {
 
 /* Acerca DE  */
 .main__acerca {
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
   width: 100%; }
   .main__acerca .Secciones__acerca {
-    margin-left: 0; }
+    margin-left: 0px; }
 
 .seccion__acerca__mision,
 .seccion__acerca__valores {
@@ -386,7 +395,7 @@ footer {
   margin-top: 0.8rem; }
 
 #Mision {
-  margin-left: 0;
+  margin-left: 0px;
   padding-left: 1rem; }
 
 .main__secciones__valores1 {
@@ -396,8 +405,8 @@ footer {
   list-style-image: url(../img/staricon2.png);
   line-height: 1.6rem;
   list-style-position: inside;
-  margin-left: 0;
-  padding-left: 0;
+  margin-left: 0px;
+  padding-left: 0px;
   font-size: 1.3rem; }
 
 @media screen and (max-width: 1200px) {
@@ -424,18 +433,18 @@ footer {
   .main__valores__lista {
     display: flex;
     flex-direction: column;
-    margin-left: 0;
+    margin-left: 0px;
     margin-right: 10px;
-    padding-left: 0;
+    padding-left: 0px;
     padding-right: 10px; }
   #Mision {
     font-size: 1.7rem; } }
 
 /* EQUIPO */
 .main__equipo {
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
   width: 100%;
   grid-row-start: 3;
   grid-row-end: 4; }
@@ -459,8 +468,8 @@ footer {
   text-align: left; }
 
 .main__seccion__banderas--larga {
-  margin-left: 0;
-  margin-right: 0; }
+  margin-left: 0px;
+  margin-right: 0px; }
 
 @media screen and (max-width: 980px) {
   .secciones__equipo1 {

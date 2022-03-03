@@ -1,13 +1,13 @@
 /* Acerca DE  */
 
 .main__acerca {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
+    margin-left: map-get($espacios, 0);
+    margin-right: map-get($espacios, 0);
+    padding-left: map-get($espacios, 0);
     width: 100%;
 
     .Secciones__acerca {
-        margin-left: 0;
+        margin-left: map-get($espacios, 0);
     }
 }
 
@@ -15,11 +15,11 @@
 .seccion__acerca__mision, 
 .seccion__acerca__valores {
     text-align: $centrado;
-    margin-right: 1rem;
+    margin-right: map-get($espacios, 01);
 }
 
 .main__secciones__historia {
-    margin-left: 1rem;
+    margin-left: map-get($espacios, 01);
 }
 .main__secciones__historia1 {
     float: right;
@@ -33,20 +33,20 @@
 
 .main__valores__titulo {
     font-size: map-get($fontsize, 107);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: map-get($espacios, 01);
+    margin-bottom: map-get($espacios, 01);
 }
 .valores__titulos {
     font-size: map-get($fontsize, 105);
-    margin-bottom: 0.8rem;
-    margin-top: 0.8rem;
+    margin-bottom: map-get($espacios, 008);
+    margin-top: map-get($espacios, 008);
 }
 
 #Mision {
     @extend .secciones__celeste;
 
-    margin-left: 0;
-    padding-left: 1rem;
+    margin-left: map-get($espacios, 0);
+    padding-left: map-get($espacios, 01);
     
 }
 
@@ -60,9 +60,9 @@
         list-style-image: url(../img/staricon2.png);
         line-height: 1.6rem;
         list-style-position: inside;
-        margin-left: 0;
-        padding-left: 0;
-        font-size: 1.3rem;
+        margin-left: map-get($espacios, 0);
+        padding-left: map-get($espacios, 0);
+        font-size: map-get($espacios, 013);
     }
 }
 
@@ -72,8 +72,8 @@
         display: flex;
         flex-direction: column;
         font-size: map-get($fontsize, 105);
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: map-get($espacios, 01);
+        margin-right: map-get($espacios, 01);
     }
 
     .main__secciones__historia1 {
@@ -88,7 +88,7 @@
         justify-content: $centrado;
         font-size: map-get($fontsize, 1);
         flex-wrap: wrap;
-        margin-left: 2rem;
+        margin-left: map-get($espacios, 02);
     }
 
     .main__secciones__valores1 {
@@ -102,10 +102,10 @@
     .main__valores__lista {
         display: flex;
         flex-direction: column;
-        margin-left: 0;
-        margin-right: 10px;
-        padding-left: 0;
-        padding-right: 10px;
+        margin-left: map-get($espacios, 0);
+        margin-right: map-get($espacios, 110);
+        padding-left: map-get($espacios, 0);
+        padding-right: map-get($espacios, 110);
     }
 
     #Mision {

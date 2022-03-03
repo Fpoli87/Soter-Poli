@@ -88,3 +88,7 @@ Nueva organizacion de los archivos
 
 Nuevos mapas y variables SASS
 Reemplazo de nuevos valores y variables
+
+-------------   Version 0.19   -------------------
+
+Creacion de main.scss

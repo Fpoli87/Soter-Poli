@@ -8,18 +8,18 @@
         .barra {
             background-color: $headerbg;
             width: 100%;
-            height: 80px;
+            height: map-get($espacios, 880);
             position: fixed;
             margin: 0 0;
             z-index: 1000;
 
             ul {
                 float: right;
-                margin-right: 20px;
+                margin-right: map-get($espacios, 220);
             
                 li {
                     display: inline-block;
-                    line-height: 78px;
+                    line-height: map-get($espacios, 778);
                     margin: 0 0;
                 }
             }
@@ -57,8 +57,8 @@
 
 .nav__checkmenu{
     float: right;
-    line-height: 80px;
-    margin-right: 20px;
+    line-height: map-get($espacios, 880);
+    margin-right: map-get($espacios, 220);
     cursor: pointer;
     display: none;
 
@@ -126,7 +126,7 @@
         width: 100%;
         height: calc(100% - 80px);
         background: $headersubbg;
-        top: 80px;
+        top: map-get($espacios, 880);
         left: -100%;
         text-align: left;
         transition: all 0.5s;
@@ -138,7 +138,7 @@
             display: flex;
             flex-direction: column;
             margin: 50px 0;
-            line-height: 30px;
+            line-height: map-get($espacios, 330);
         }
 
     }
@@ -174,6 +174,6 @@
 
     .nav__checkmenu {
         display: block;
-        margin-right: 0.6rem;
+        margin-right: map-get($espacios, 006);
     }
 }

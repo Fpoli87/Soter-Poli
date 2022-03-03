@@ -8,12 +8,12 @@
     text-align: $centrado;
     grid-column-start: 1;
     grid-column-end: 2;
-    padding-left: 20px;
-    padding-right: 30px;
+    padding-left: map-get($espacios, 220);
+    padding-right: map-get($espacios, 330);
         
     p {
-        margin-block-end: 5px;
-        margin-block-start: 5px;
+        margin-block-end: map-get($espacios, 55);
+        margin-block-start: map-get($espacios, 55);
         padding: 0px 10px;
     }
 }
@@ -27,8 +27,8 @@
     align-content: $centrado;
     text-align: $centrado;
     margin: 1rem 1rem;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: map-get($espacios, 220);
+    padding-right: map-get($espacios, 220);
         
     div {
         p {
@@ -44,14 +44,23 @@
         
 .seccion__tarjetaizq {
     width: 30%;
+    margin-top: map-get($espacios, 110);
+    margin-bottom: map-get($espacios, 110);
+    padding: 5px 5px;
 }
         
 .seccion__tarjetacentral {
     width: 30%;
+    margin-top: map-get($espacios, 110);
+    margin-bottom: map-get($espacios, 110);
+    padding: 5px 5px;
 }
         
 .seccion__tarjetaderecha {
     width: 30%;
+    margin-top: map-get($espacios, 110);
+    margin-bottom: map-get($espacios, 110);
+    padding: 5px 5px;
 }
         
         
@@ -60,8 +69,8 @@
     .seccion__inicio {
         font-size: map-get($fontsize, 107);
         p {
-            padding-left: 3px;
-            padding-right: 3px;
+            padding-left: map-get($espacios, 33);
+            padding-right: map-get($espacios, 33);
         }
     }
             
@@ -71,7 +80,7 @@
         justify-content: space-around;
         align-content: $centrado;
         text-align: $centrado;
-        margin: 0.8rem;
+        margin: map-get($espacios, 008);
     }
         
     .seccion__tarjetas__texto--fuente {

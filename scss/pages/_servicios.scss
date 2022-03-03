@@ -1,8 +1,8 @@
 /* SERVICIOS  */
 
 .main__servicios {
-    margin-left: 1.2rem;
-    margin-right: 1.2rem;
+    margin-left: map-get($espacios, 012);
+    margin-right: map-get($espacios, 012);
     padding-left: 0;
    
     @extend .column1-4;
@@ -35,16 +35,16 @@
 }
 
 #imgservicios {
-    margin-top: 1rem;
-    margin-bottom: 1.2rem;
+    margin-top: map-get($espacios, 01);
+    margin-bottom: map-get($espacios, 012);
 }
 
 #servicioitems,
 #servicioitems1,
 #servicioitems2 {
     div {
-        margin-left: 20rem;
-        margin-right: 20rem;
+        margin-left: map-get($espacios, 020);
+        margin-right: map-get($espacios, 020);
     }
 }
 
@@ -58,7 +58,7 @@
         flex-direction: column;
         justify-content: $centrado;
         font-size: map-get($fontsize, 105);
-        margin-right: 1rem;
+        margin-right: map-get($espacios, 01);
     }
 
     .main__seccion__custodias1 img,
@@ -70,7 +70,7 @@
     }
 
     #imgservicios {
-        height: 4.5rem;
+        height: map-get($espacios, 045);
     }
 }
 

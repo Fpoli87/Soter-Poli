@@ -4,7 +4,7 @@
 
 @mixin ubicacion ($position) {
     float: $position;
-    padding: 0.5rem;
+    padding: map-get($espacios, 005);
 }
 
 /* -- Estilos titulos  --*/
@@ -13,25 +13,25 @@
     h1{
         text-align: $centrado;
         font-size: map-get($fontsize, 4);
-        margin: 1.2rem;
+        margin: map-get($fontsize, 102);
     }
 
     h2{
         text-align: $centrado;
         font-size: map-get($fontsize, 3);
-        margin: 1.2rem;
+        margin: map-get($fontsize, 102);
     }
 
     h3{
         text-align: $centrado;
         font-size: map-get($fontsize, 3);
-        margin: 1rem;
+        margin: map-get($fontsize, 1);
         clear:both;
     }
 
     h4{
         text-align: $centrado;
         font-size: map-get($fontsize, 108);
-        margin: 1rem;
+        margin: map-get($fontsize, 1);
     }
 }

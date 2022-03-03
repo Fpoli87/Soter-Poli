@@ -1,9 +1,9 @@
  /* EQUIPO */
 
  .main__equipo {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
+    margin-left: map-get($espacios, 0);
+    margin-right: map-get($espacios, 0);
+    padding-left: map-get($espacios, 0);
     width: 100%;
     @extend .column1-4;
     grid-row-start: 3;
@@ -42,8 +42,8 @@
 }
 
 .main__seccion__banderas--larga {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: map-get($espacios, 0);
+    margin-right: map-get($espacios, 0);
 }
 
 @media screen and (max-width: 980px) {

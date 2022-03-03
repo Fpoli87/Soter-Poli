@@ -2,20 +2,20 @@
 
   body{
     margin: 0 0;
-    padding: 0;
+    padding: map-get($espacios, 0);
     height: auto;
     overflow-x: hidden;
     
 }
 
 main {
-    padding-top: 2rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
+    padding-top: map-get($espacios, 02);
+    margin-left: map-get($espacios, 0);
+    margin-right: map-get($espacios, 0);
 }
 
 .main__imagenestop {
-    padding-top: 3rem;
+    padding-top: map-get($espacios, 03);
 }
 
 .img--lg,

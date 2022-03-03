@@ -17,19 +17,19 @@
 }
 
 select {
-    margin-top: 1rem;
+    margin-top: map-get($espacios, 01);
 }
 
 #nombreapellido, #tel, #correo, #comentario {
     width: 50%;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: map-get($espacios, 005);
+    margin-bottom: map-get($espacios, 005);
     border: none;
 }
 
 textarea {
-    min-height: 50px;
-    max-height: 300px;
+    min-height: map-get($espacios, 550);
+    max-height: map-get($espacios, 3300);
     min-width: 50%;
     max-width: 50%;
 }
@@ -40,10 +40,10 @@ textarea {
     color: white;
     border: none;
     box-sizing: border-box;
-    padding: 0.7rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
+    padding: map-get($espacios, 007);
+    margin-top: map-get($espacios, 005);
+    margin-bottom: map-get($espacios, 005);
+    font-size: map-get($fontsize, 103);
 
 }
 
@@ -52,17 +52,19 @@ textarea {
 }
 
 .seccion__locacion {
-    margin-top: 1.2rem;
-    margin-left: 1.3rem;
-    margin-right: 1.3rem;
-    margin-bottom: 1.2rem;
+    margin-top: map-get($espacios, 012);
+    margin-left: map-get($espacios, 013);
+    margin-right: map-get($espacios, 013);
+    margin-bottom: map-get($espacios, 012);
     font-size: map-get($fontsize, 102);
 
     p {
-        margin-top: 1.2rem;
-        margin-bottom: 1.5rem;
+        margin-top: map-get($espacios, 012);
+        margin-bottom: map-get($espacios, 015);
         text-align: $centrado;
         font-size: map-get($fontsize, 105);
+
+
     }
 }
 
@@ -102,8 +104,8 @@ textarea {
     }
 
     textarea {
-        min-height: 50px;
-        max-height: 300px;
+        min-height: map-get($espacios, 550);
+        max-height: map-get($espacios, 3300);
         min-width: 70%;
         max-width: 70%;
     }

@@ -2,7 +2,7 @@
 
  footer {
     background-color: $footerbg;
-    margin-top: 6px;
+    margin-top: map-get($espacios, 66);
     clear: both;
     width: 100%;
     @extend .column1-4;
@@ -15,9 +15,9 @@
 .footer__contenedor {
     display: flex;
     justify-content: space-between;
-    padding: 1.2rem;
+    padding: map-get($espacios, 012);
     flex-wrap: wrap;
-    margin-bottom: 0;
+    margin-bottom: map-get($espacios, 0);
 }
 
 .footer__columna1 {
@@ -38,14 +38,14 @@
 
 
 .subgrid__derechos  {
-    margin-top: 5px;
-    margin-bottom: 1rem;
+    margin-top: map-get($espacios, 55);
+    margin-bottom: map-get($espacios, 01);
     text-align: $centrado;
     font-size: map-get($fontsize, 102);
 }
 
 .footer__columna3 {
-    margin-top: 0px;
+    margin-top: map-get($espacios, 0);
     margin-right: 0;    
     text-align: justify;
     font-size: map-get($fontsize, 102);
@@ -98,7 +98,7 @@
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(4, auto);
-        gap: 0.5rem;
+        gap: map-get($espacios, 005);
         grid-template-areas: 
         "redes"
         "contactos"
