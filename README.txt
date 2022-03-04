@@ -92,3 +92,7 @@ Reemplazo de nuevos valores y variables
 -------------   Version 0.19   -------------------
 
 Creacion de main.scss
+
+-------------   Version 0.20   -------------------
+
+Eliminacion archivo styles.scss
