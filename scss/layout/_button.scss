@@ -1,0 +1,43 @@
+// Boton Cards Inicio
+
+.tarjeta__boton {
+    background: $buttonoff;
+    color: $buttontxtoff; 
+    border: 2px solid $buttonbrdoff;
+    padding: 16px 20px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    text-transform: uppercase;
+
+    &:hover {
+        color:$buttontxton;
+        border: 2px solid $buttonbrdon;
+        
+    }
+
+    &::after {
+        content: "";
+        background: $buttonon; 
+        position: absolute;
+        z-index: -1;
+        padding: 16px 20px;
+        display: block;
+        left: -20%;
+        right: -20%;
+        top: 0;
+        bottom: 0;
+        transform: skewX(-45deg) scale(0, 1);
+        transition: all 0.3s ease;
+    }
+
+    &:hover::after {
+        transition: all 0.3s ease-out;
+        transform: skewX(-45deg) scale(1, 1);
+    }
+  }
+  
+  
+  

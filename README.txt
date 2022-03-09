@@ -39,6 +39,7 @@ Reestructuracion del CSS en base a SASS
 Mejora de imagenes en version Tablet y Mobile
 
 -------------   Version 0.10   -------------------
+
 Mejora visualizacion y ajustes en Mobile
 
 -------------   Version 0.11   -------------------
@@ -96,3 +97,8 @@ Creacion de main.scss
 -------------   Version 0.20   -------------------
 
 Eliminacion archivo styles.scss
+
+-------------   Version 0.21   -------------------
+
+Nuevos colores y animaciones en Tarjetas Inicio
+Creacion button.scss

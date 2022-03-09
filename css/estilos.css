@@ -26,6 +26,7 @@
 /* -- Estilos titulos  --*/
 /*-- colores header -- */
 /* -- Colores secciones -- */
+/*  Colores Botones  */
 /* --  Colores Footer  -- */
 /* Layout */
 /*  HEADER  */
@@ -291,6 +292,37 @@ footer {
     grid-template-areas: "redes" "contactos" "politicas" "derechos";
     justify-content: center; } }
 
+.tarjeta__boton {
+  background: white;
+  color: black;
+  border: 2px solid black;
+  padding: 16px 20px;
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  text-transform: uppercase; }
+  .tarjeta__boton:hover {
+    color: white;
+    border: 2px solid #4b6587; }
+  .tarjeta__boton::after {
+    content: "";
+    background: #6c757d;
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.3s ease; }
+  .tarjeta__boton:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1); }
+
 /*Pages */
 /* Inicio  */
 /*Grid inicio*/
@@ -323,19 +355,34 @@ footer {
   width: 30%;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 5px 5px; }
+  padding: 5px 5px;
+  box-shadow: 0px 0px 15px; }
+  .seccion__tarjetaizq:hover {
+    background-color: #90ade2;
+    color: white;
+    box-shadow: none; }
 
 .seccion__tarjetacentral {
   width: 30%;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 5px 5px; }
+  padding: 5px 5px;
+  box-shadow: 0px 0px 15px; }
+  .seccion__tarjetacentral:hover {
+    background-color: #90ade2;
+    color: white;
+    box-shadow: none; }
 
 .seccion__tarjetaderecha {
   width: 30%;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 5px 5px; }
+  padding: 5px 5px;
+  box-shadow: 0px 0px 15px; }
+  .seccion__tarjetaderecha:hover {
+    background-color: #90ade2;
+    color: white;
+    box-shadow: none; }
 
 @media screen and (max-width: 922px) {
   .seccion__inicio {

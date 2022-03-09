@@ -38,6 +38,8 @@
             }
         }
     }
+
+    
 }
         
         
@@ -47,6 +49,13 @@
     margin-top: map-get($espacios, 110);
     margin-bottom: map-get($espacios, 110);
     padding: 5px 5px;
+    box-shadow: 0px 0px 15px;
+
+    &:hover {
+        background-color: $colorfondo;
+        color: white;
+        box-shadow: none;
+    }
 }
         
 .seccion__tarjetacentral {
@@ -54,6 +63,13 @@
     margin-top: map-get($espacios, 110);
     margin-bottom: map-get($espacios, 110);
     padding: 5px 5px;
+    box-shadow: 0px 0px 15px;
+
+    &:hover {
+        background-color: $colorfondo;
+        color: white;
+        box-shadow: none;
+    }
 }
         
 .seccion__tarjetaderecha {
@@ -61,6 +77,13 @@
     margin-top: map-get($espacios, 110);
     margin-bottom: map-get($espacios, 110);
     padding: 5px 5px;
+    box-shadow: 0px 0px 15px;
+
+    &:hover {
+        background-color: $colorfondo;
+        color: white;
+        box-shadow: none;
+    }
 }
         
         
