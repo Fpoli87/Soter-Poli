@@ -20,8 +20,145 @@
     margin: 1.5rem 2rem;
     text-align: justify;
     font-family: 'Open Sans', sans-serif;
+
+    .equipo__texto__columnas {
+
+        .equipo__desplegable {
+
+            input {
+                display: none;
+            }
+
+            label {
+
+                h3 {
+                    text-transform: uppercase;
+                    &:hover {
+                        border-bottom: 1px solid black;
+                    }
+
+                    #menos__integrantes, #menos__capacitacion, #menos__investigacion, #menos__tecnicos {
+                        display: none;
+                    }
+                }
+            }
+
+            .texto__integrantes, .texto__capacitacion, .texto__investigacion, .texto__tecnicos {
+                display: none;
+            }
+        }
+        
+    }
     
 }
+
+/* Activacion de los elementos desplegables */
+#check__integrantes:checked ~ {
+
+    label {
+        h3{
+            #menos__integrantes {
+                display: inline
+            }
+            #mas__integrantes {
+                display:none
+            }
+
+            border-bottom: 1px solid black;
+
+        }
+    }
+
+    .texto__integrantes {
+        display: block
+    }
+
+    
+}
+
+#check__capacitacion:checked ~ {
+
+    label {
+        h3{
+            #menos__capacitacion {
+                display: inline
+            }
+            #mas__capacitacion {
+                display:none
+            }
+
+            border-bottom: 1px solid black;
+
+        }
+    }
+
+    .texto__capacitacion {
+        display: block
+    }
+
+    
+}
+
+#check__investigacion:checked ~ {
+
+    label {
+        h3{
+            #menos__investigacion {
+                display: inline;
+            }
+            #mas__investigacion {
+                display:none
+            }
+
+            border-bottom: 1px solid black;
+
+        }
+    }
+
+    .texto__investigacion {
+        display: block
+    }
+
+    
+}
+
+#check__tecnicos:checked ~ {
+
+    label {
+        h3{
+            #menos__tecnicos {
+                display: inline
+            }
+            #mas__tecnicos {
+                display:none
+            }
+
+            border-bottom: 1px solid black;
+
+        }
+    }
+
+    .texto__tecnicos {
+        display: block
+    }
+
+    
+}
+
+
+
+/* Cambio de iconos con lo desplegable */
+
+/*#check__integrantes:checked ~ #mas__integrantes {
+    display: none
+}
+
+#check__integrantes:checked ~ #menos__integrantes {
+    display: block
+}*/
+
+
+
 .secciones__equipo2 {
     @extend .secciones__celeste;
 

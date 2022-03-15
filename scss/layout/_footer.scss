@@ -9,6 +9,10 @@
     grid-row-start: 5;
     grid-row-end: 6;
 
+    section {
+        margin-bottom: map-get($espacios, 110);
+    }
+
 }
 
 

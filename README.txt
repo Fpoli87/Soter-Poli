@@ -102,3 +102,10 @@ Eliminacion archivo styles.scss
 
 Nuevos colores y animaciones en Tarjetas Inicio
 Creacion button.scss
+
+-------------   Version 0.22   -------------------
+
+Nuevos colores con mejor contraste
+Eliminacion de etiquetas <BR> y aplicación de los margenes correspondientes
+Reestructuración de los textos en Equipo.html
+Secciones desplegables en Equipos.html

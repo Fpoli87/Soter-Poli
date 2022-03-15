@@ -10,8 +10,14 @@
 
 main {
     padding-top: map-get($espacios, 02);
+    margin-bottom: map-get($espacios, 110);
     margin-left: map-get($espacios, 0);
     margin-right: map-get($espacios, 0);
+    
+    section {
+        margin-top: map-get($espacios, 550);
+        margin-bottom: map-get($espacios, 330);
+    }
 }
 
 .main__imagenestop {

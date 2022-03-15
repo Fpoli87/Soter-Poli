@@ -98,7 +98,8 @@ header .header__contenedor .barra {
   text-align: left;
   background-color: #6c757d;
   width: auto;
-  overflow: hidden; }
+  overflow: hidden;
+  border-bottom: 1px solid black; }
 
 @media (max-width: 953px) {
   .nav__checkmenu {
@@ -176,8 +177,12 @@ body {
 
 main {
   padding-top: 2rem;
+  margin-bottom: 10px;
   margin-left: 0px;
   margin-right: 0px; }
+  main section {
+    margin-top: 50px;
+    margin-bottom: 30px; }
 
 .main__imagenestop {
   padding-top: 3rem; }
@@ -209,7 +214,7 @@ h4 {
   margin: 1rem; }
 
 .secciones__celeste, .seccion__inicio, #Mision, .secciones__equipo2 {
-  background: #90ade2;
+  background: #1f538f;
   width: 100%;
   color: white;
   font-size: 1.5rem; }
@@ -222,6 +227,8 @@ footer {
   width: 100%;
   grid-row-start: 5;
   grid-row-end: 6; }
+  footer section {
+    margin-bottom: 10px; }
 
 .footer__contenedor {
   display: flex;
@@ -358,7 +365,7 @@ footer {
   padding: 5px 5px;
   box-shadow: 0px 0px 15px; }
   .seccion__tarjetaizq:hover {
-    background-color: #90ade2;
+    background-color: #1f538f;
     color: white;
     box-shadow: none; }
 
@@ -369,7 +376,7 @@ footer {
   padding: 5px 5px;
   box-shadow: 0px 0px 15px; }
   .seccion__tarjetacentral:hover {
-    background-color: #90ade2;
+    background-color: #1f538f;
     color: white;
     box-shadow: none; }
 
@@ -380,7 +387,7 @@ footer {
   padding: 5px 5px;
   box-shadow: 0px 0px 15px; }
   .seccion__tarjetaderecha:hover {
-    background-color: #90ade2;
+    background-color: #1f538f;
     color: white;
     box-shadow: none; }
 
@@ -503,7 +510,66 @@ footer {
   margin: 1.5rem 2rem;
   text-align: justify;
   font-family: 'Open Sans', sans-serif; }
+  .secciones__equipo1 .equipo__texto__columnas .equipo__desplegable input {
+    display: none; }
+  .secciones__equipo1 .equipo__texto__columnas .equipo__desplegable label h3 {
+    text-transform: uppercase; }
+    .secciones__equipo1 .equipo__texto__columnas .equipo__desplegable label h3:hover {
+      border-bottom: 1px solid black; }
+    .secciones__equipo1 .equipo__texto__columnas .equipo__desplegable label h3 #menos__integrantes, .secciones__equipo1 .equipo__texto__columnas .equipo__desplegable label h3 #menos__capacitacion, .secciones__equipo1 .equipo__texto__columnas .equipo__desplegable label h3 #menos__investigacion, .secciones__equipo1 .equipo__texto__columnas .equipo__desplegable label h3 #menos__tecnicos {
+      display: none; }
+  .secciones__equipo1 .equipo__texto__columnas .equipo__desplegable .texto__integrantes, .secciones__equipo1 .equipo__texto__columnas .equipo__desplegable .texto__capacitacion, .secciones__equipo1 .equipo__texto__columnas .equipo__desplegable .texto__investigacion, .secciones__equipo1 .equipo__texto__columnas .equipo__desplegable .texto__tecnicos {
+    display: none; }
 
+/* Activacion de los elementos desplegables */
+#check__integrantes:checked ~ label h3 {
+  border-bottom: 1px solid black; }
+  #check__integrantes:checked ~ label h3 #menos__integrantes {
+    display: inline; }
+  #check__integrantes:checked ~ label h3 #mas__integrantes {
+    display: none; }
+
+#check__integrantes:checked ~ .texto__integrantes {
+  display: block; }
+
+#check__capacitacion:checked ~ label h3 {
+  border-bottom: 1px solid black; }
+  #check__capacitacion:checked ~ label h3 #menos__capacitacion {
+    display: inline; }
+  #check__capacitacion:checked ~ label h3 #mas__capacitacion {
+    display: none; }
+
+#check__capacitacion:checked ~ .texto__capacitacion {
+  display: block; }
+
+#check__investigacion:checked ~ label h3 {
+  border-bottom: 1px solid black; }
+  #check__investigacion:checked ~ label h3 #menos__investigacion {
+    display: inline; }
+  #check__investigacion:checked ~ label h3 #mas__investigacion {
+    display: none; }
+
+#check__investigacion:checked ~ .texto__investigacion {
+  display: block; }
+
+#check__tecnicos:checked ~ label h3 {
+  border-bottom: 1px solid black; }
+  #check__tecnicos:checked ~ label h3 #menos__tecnicos {
+    display: inline; }
+  #check__tecnicos:checked ~ label h3 #mas__tecnicos {
+    display: none; }
+
+#check__tecnicos:checked ~ .texto__tecnicos {
+  display: block; }
+
+/* Cambio de iconos con lo desplegable */
+/*#check__integrantes:checked ~ #mas__integrantes {
+    display: none
+}
+
+#check__integrantes:checked ~ #menos__integrantes {
+    display: block
+}*/
 .secciones__equipo2 p {
   margin: 1rem 1.5rem;
   text-align: justify; }

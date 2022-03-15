@@ -73,10 +73,8 @@
             </div>
             
         </header>
-        <br>
-        <br>
 
-
+        
         <!--           PRINCIPAL          -->
 
         <img src="img/equipo_x2.jpg" alt="Hermandad" class="main__imagenestop d-none d-lg-block" width="100%" height="300rem">
@@ -86,25 +84,56 @@
 
         <main class=" main main__equipo">
             
-            <h1>La herramienta indicada para cada problema</h1>
-            <br>
+            <h1 class="mb-5">La herramienta indicada para cada problema</h1>
+            
             <section class="secciones__equipo1" id="Equipo">
 
 
 
                 <h2 class="equipo__subtitulos--derecha">Un equipo de profesionales de primer nivel a su disposición</h2>
 
-                <p>Nuestra empresa son sus empleados, y esos empleados conforman actualmente uno de los mejores equipos interdisciplinarios en seguridad e investigaciones a nivel internacional. Todo nuestro equipo cuenta con gran experiencia en el diseño, implementación, seguimiento y control de planes de seguridad.</p>
-                <br>
-                <p>Nuestros integrantes fueron seleccionados y reclutados luego haberse retirado exitosamente de las diferentes fuerzas y organismos de inteligencia nacional.</p>
-                <br>
-                <p>Contamos con personal de seguridad constantemente entrenado y capacitado, formado por los mejores elementos de fuerzas especiales del país. Muchos de ellos cuentan además con intercambios por diferentes organismos extranjeros especializados en protección de mandatarios y personalidades como el Servicio Secreto, la Gendarmerie Nationale francesa o la Bundeskriminalamt alemán entre otras. Hemos podido aprender Krav Maga derecho desde la fuente con miembros de las Fuerzas de Defensa de Israel (IDF) y su rama de Operaciones Especiales del Shayetet 13. De este selecto grupo de operadores de seguridad se desprende un equipo de instructores con experiencia tanto en el polígono, capacitando a fuerzas y elementos de seguridad nacionales, y con experiencia en el terreno trabajando y adoptando las técnicas, formas y procedimientos al mundo real. Siempre aplicando en el campo lo que se transmite en las capacitaciones.</p>
-                <br>
-                <p>Por otro lado, contamos un excelente equipo de reunión y análisis de información, con más de 25 años de experiencia en investigaciones criminales, judiciales, empresariales o privadas. Se rigen bajo estrictas normas de secreto y clasificación de toda la información, asegurando que sólo la persona necesaria tendrá acceso al materia. En Italia participaron del intercambio con la Agenzia informazioni e sicurezza interna (AISI), donde se especializaron en reunión y análisis de información criminal aplicado a Mafias. En Bélgica y Alemania participaron en capacitaciones con la Staatsveiligheid y la Bundesnachrichtendienst (BND) respectivamente, en análisis e investigación terrorista. Además, cuentan con años de intercambio de información, trabajando con agencias internacionales como Interpol (Francia), Central Nacional de Inteligencia (CNI, España), FBI, NSA (Estados Unidos), así como Shin Bet y Mossad de Israel.</p>
-                <br>
-                <p>¿Puede alguien dar lo que no tiene? Realmente la capacitación es parte fundamental en la inversión de la seguridad que usted posee. Tenemos diferentes Programas de Capacitación en Seguridad, para personal de seguridad propiamente dicho, para sus empleados, para usted y su familia. Las Capacitaciones es una de las mejores inversiones en seguridad que usted puede hacer.</p>
-                <br>
-                <p>Contamos con una amplia plantilla de técnicos, con experiencia en el uso de la tecnología aplicada la seguridad. Entre sus capacidades se encuentran las adquiridas para el uso de materiales tecnológicos específicos para barridos electrónicos en diferentes escenarios, colocación y mantenimiento de material de videovigilancia, utilización de elementos para posicionamiento global en tiempo real, mantenimiento de comunicaciones en canales encriptados en escenarios urbanos.</p>
+                <div class="equipo__texto__columnas">
+                    <p>Nuestra empresa son sus empleados, y esos empleados conforman actualmente uno de los mejores equipos interdisciplinarios en seguridad e investigaciones a nivel internacional. Todo nuestro equipo cuenta con gran experiencia en el diseño, implementación, seguimiento y control de planes de seguridad.</p>
+                    
+                    <div class="equipo__desplegable">
+                        <input type="checkbox" name="" id="check__integrantes">
+                        <label for="check__integrantes" class="equipo__integrantes">
+                            <h3>Nuestro Equipo de Custodia <i class="fa-regular fa-square-plus " id="mas__integrantes"></i> <i class="fa-regular fa-square-minus" id="menos__integrantes"></i></h3>
+                        </label>
+                        <div class="texto__integrantes">
+                            <p>Nuestros integrantes fueron seleccionados y reclutados luego haberse retirado exitosamente de las diferentes fuerzas y organismos de inteligencia nacional.</p>        
+                            <p>Contamos con personal de seguridad constantemente entrenado y capacitado, formado por los mejores elementos de fuerzas especiales del país. Muchos de ellos cuentan además con intercambios por diferentes organismos extranjeros especializados en protección de mandatarios y personalidades como el Servicio Secreto, la Gendarmerie Nationale francesa o la Bundeskriminalamt alemán entre otras. Hemos podido aprender Krav Maga derecho desde la fuente con miembros de las Fuerzas de Defensa de Israel (IDF) y su rama de Operaciones Especiales del Shayetet 13.</p>
+                        </div>
+                    </div>
+                    <div class="equipo__desplegable">
+                        <input type="checkbox" name="" id="check__capacitacion"> 
+                        <label for="check__capacitacion" class="equipo__capacitacion">
+                            <h3>Nuestros Instructores <i class="fa-regular fa-square-plus" id="mas__capacitacion"></i> <i class="fa-regular fa-square-minus" id="menos__capacitacion"></i></h3>
+                        </label>
+                        <div class="texto__capacitacion">
+                            <p>De nuestro selecto grupo de operadores de seguridad se desprende un equipo de instructores con experiencia tanto en el polígono, capacitando a fuerzas y elementos de seguridad nacionales, y con experiencia en el terreno trabajando y adoptando las técnicas, formas y procedimientos al mundo real. Siempre aplicando en el campo lo que se transmite en las capacitaciones.</p>
+                            <p>¿Puede alguien dar lo que no tiene? Realmente la capacitación es parte fundamental en la inversión de la seguridad que usted posee. Tenemos diferentes Programas de Capacitación en Seguridad, para personal de seguridad propiamente dicho, para sus empleados, para usted y su familia. Las Capacitaciones es una de las mejores inversiones en seguridad que usted puede hacer.</p>
+                        </div>
+                    </div>
+                    <div class="equipo__desplegable">
+                        <input type="checkbox" name="" id="check__investigacion">
+                        <label for="check__investigacion" class="equipo__investigacion">
+                            <h3>Nuestros Investigadores <i class="fa-regular fa-square-plus" id="mas__investigacion"></i> <i class="fa-regular fa-square-minus" id="menos__investigacion"></i></h3>
+                        </label>
+                        <div class="texto__investigacion">
+                            <p>Por otro lado, contamos un excelente equipo de reunión y análisis de información, con más de 25 años de experiencia en investigaciones criminales, judiciales, empresariales o privadas. Se rigen bajo estrictas normas de secreto y clasificación de toda la información, asegurando que sólo la persona necesaria tendrá acceso al materia. En Italia participaron del intercambio con la Agenzia informazioni e sicurezza interna (AISI), donde se especializaron en reunión y análisis de información criminal aplicado a Mafias. En Bélgica y Alemania participaron en capacitaciones con la Staatsveiligheid y la Bundesnachrichtendienst (BND) respectivamente, en análisis e investigación terrorista. Además, cuentan con años de intercambio de información, trabajando con agencias internacionales como Interpol (Francia), Central Nacional de Inteligencia (CNI, España), FBI, NSA (Estados Unidos), así como Shin Bet y Mossad de Israel.</p>
+                        </div>
+                    </div>
+                    <div class="equipo__desplegable">
+                        <input type="checkbox" name="" id="check__tecnicos">
+                        <label for="check__tecnicos" class="equipo__tecnicos">
+                            <h3>Nuestros Técnicos <i class="fa-regular fa-square-plus" id="mas__tecnicos"></i> <i class="fa-regular fa-square-minus" id="menos__tecnicos"></i></h3>
+                        </label>
+                        <div class="texto__tecnicos">
+                            <p>Contamos con una amplia plantilla de técnicos, con experiencia en el uso de la tecnología aplicada la seguridad. Entre sus capacidades se encuentran las adquiridas para el uso de materiales tecnológicos específicos para barridos electrónicos en diferentes escenarios, colocación y mantenimiento de material de videovigilancia, utilización de elementos para posicionamiento global en tiempo real, mantenimiento de comunicaciones en canales encriptados en escenarios urbanos.</p>
+                        </div>
+                    </div>
+                </div>
 
             </section>
 
@@ -201,7 +230,6 @@
                 
                 </section>
             
-        
                 <section class="mb-4">
                     <h5 class="text-uppercase fw-bold">Contacto</h5>
                     <p><i class="fas fa-home mr-3"></i> CABA, Buenos Aires, Argentina</p>
@@ -209,52 +237,7 @@
                     <p><i class="fas fa-phone mr-3"></i> +54 9 11 2024 3550</p>
                     <p><i class="fa-brands fa-whatsapp mr-3 fa-xl"></i> +54 9 11 2024 3549</p>
                 </section>
-            
-        
-                <section class="footer__accesos">
-                    
-                    <div class="row">
-                    
-                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                
-                            <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#!" class="text-white">Aviso Legal</a>
-                            </li>
-                            </ul>
-                        </div>
-                    
-                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                
-                            <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#!" class="text-white">Politica de Privacidad</a>
-                            </li>
-                            
-                            </ul>
-                        </div>
-                    
-                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                
-                            <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#!" class="text-white">Politica de Cookies</a>
-                            </li>
-                            
-                        </div>
-                    
-                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">  
-                            <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#!" class="text-white">Mapa del sitio</a>
-                            </li>
-                            </ul>
-                        </div>
-                    
-                    </div>
-                    
-                </section>
-            
+                        
             </div>
         
             <div class="bg-secondary text-center p-2 derechos" id="zocalo">
