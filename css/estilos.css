@@ -114,7 +114,8 @@ header .header__contenedor .barra {
     text-align: left;
     transition: all 0.5s;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    overflow-y: scroll; }
     .header__navmenu li {
       display: flex;
       flex-direction: column;

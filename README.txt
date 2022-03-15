@@ -109,3 +109,8 @@ Nuevos colores con mejor contraste
 Eliminacion de etiquetas <BR> y aplicación de los margenes correspondientes
 Reestructuración de los textos en Equipo.html
 Secciones desplegables en Equipos.html
+
+-------------   Version 0.23   -------------------
+
+Scroll disponible para el menu con resolución menor a 953px
+Margenes de textos en Equipo.html
